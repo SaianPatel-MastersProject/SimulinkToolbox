@@ -1,0 +1,2594 @@
+Model {
+  Name			  "ExampleOpponentTelemetry"
+  Version		  9.2
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.80"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 8
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Additional Vehicle"
+      Path		      "ExampleOpponentTelemetry/Additional Vehicle"
+      SID		      "66"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Additional Vehicle"
+      Path		      "ExampleOpponentTelemetry/Additional Vehicle1"
+      SID		      "83"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Opponent Telemetry"
+      Path		      "ExampleOpponentTelemetry/Opponent Telemetry"
+      SID		      "146"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Opponent Telemetry"
+      Path		      "ExampleOpponentTelemetry/Opponent Telemetry1"
+      SID		      "147"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Physics Visualisation"
+      Path		      "ExampleOpponentTelemetry/Physics Visualisation"
+      SID		      "118"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Set Camera View"
+      Path		      "ExampleOpponentTelemetry/Set Camera View"
+      SID		      "114"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Sources/Repeating\nSequence"
+      Path		      "ExampleOpponentTelemetry/Yaw"
+      SID		      "108"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/rFpro Setup"
+      Path		      "ExampleOpponentTelemetry/rFpro Setup"
+      SID		      "124"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  DiagnosticSuppressor	  "on"
+  SuppressorTable	  "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n<!DOCTYPE boost_serialization>\n<"
+  "boost_serialization signature=\"serialization::archive\" version=\"15\">\n<DiagnosticSuppressor class_id=\"0\" track"
+  "ing_level=\"0\" version=\"6\">\n	<Table class_id=\"1\" tracking_level=\"0\" version=\"0\">\n		<count>2</count>\n		<b"
+  "ucket_count>8</bucket_count>\n		<item_version>0</item_version>\n		<item class_id=\"2\" tracking_level=\"0\" version="
+  "\"0\">\n			<first class_id=\"3\" tracking_level=\"0\" version=\"6\">\n				<Source class_id=\"4\" tracking_level=\"0\""
+  " version=\"0\">\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>ExampleOpponentTelemetry/Add"
+  "itional Vehicle/Send Enable/Subsystem/Counter Free-Running2</item>\n				</Source>\n			</first>\n			<second class_id="
+  "\"5\" tracking_level=\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n	"
+  "				<count>2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item class_id="
+  "\"7\" tracking_level=\"0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<"
+  "ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n					"
+  "				<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\""
+  " tracking_level=\"0\" version=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_i"
+  "d=\"10\" tracking_level=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\""
+  ">\n									<date>20160523</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_leve"
+  "l=\"0\" version=\"0\">\n									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n"
+  "									<time_duration_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_second"
+  "s>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n"
+  "							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n			"
+  "			<first>\n							<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<c"
+  "ount>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<"
+  "second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<da"
+  "te>20160523</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n					"
+  "				<time_duration_hours>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n					"
+  "				<time_duration_seconds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_f"
+  "ractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionTy"
+  "pe>\n						</second>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<item>\n			<first>\n				<Sourc"
+  "e>\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>ExampleOpponentTelemetry/Additional Vehic"
+  "le1/Send Enable/Subsystem/Counter Free-Running2</item>\n				</Source>\n			</first>\n			<second>\n				<SuppressedData"
+  ">\n					<count>2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item>\n			"
+  "			<first>\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<co"
+  "unt>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<s"
+  "econd>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<dat"
+  "e>20160523</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n						"
+  "			<time_duration_hours>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n						"
+  "			<time_duration_seconds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fr"
+  "actional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionTyp"
+  "e>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID>Simulink:DataType:WarningOverFlowDetected<"
+  "/ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								"
+  "</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n						"
+  "	<LastModified>\n								<ptime_date>\n									<date>20160523</date>\n								</ptime_date>\n								<ptime_time_du"
+  "ration>\n									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n									<time"
+  "_duration_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_seconds>\n									<"
+  "time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</Last"
+  "Modified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n				</SuppressedData>\n			</s"
+  "econd>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n</boost_serialization>\n\n"
+  WebScopes_FoundationPlugin "on"
+  NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
+  PostLoadFcn		  "TIMESTEP = 0.001;"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [281.0, 133.0, 1212.0, 1159.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[59]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1740.0, 1486.0]
+	  ZoomFactor		  [0.83060109289617479]
+	  Offset		  [-105.78947368421063, 54.1447368421052]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "114"
+	  Extents		  [3840.0, 2160.0]
+	  ZoomFactor		  [1.4]
+	  Offset		  [0.0, 0.0]
+	}
+	PropName		"EditorsInfo"
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		7
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[426]
+	Height			[320]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAACTAP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAAUwD///8AAAcEAAAGIQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACp/////wAAAAAAAAAA/////wEAAAEu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAHX/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAQy/////wAAAAAAAAAA/"
+      "////wEAAARz/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+    }
+  }
+  HideAutomaticNames	  on
+  Created		  "Mon Aug 19 11:09:00 2013"
+  Creator		  "enewton"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "SeanKavanagh"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Mar 22 14:28:25 2024"
+  RTWModifiedTimeStamp	  633018497
+  ModelVersionFormat	  "1.%<AutoIncrement:80>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ShowSubsystemDomainSpec off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  on
+  MultiThreadCoSim	  on
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    8
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "ExampleOpponentTelemetry"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "ExampleOpponentTelemetry"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      9
+      Version		      "1.18.1"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  10
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  on
+	  ConcurrentTasks	  off
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  11
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  12
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  UseRowMajorAlgorithm	  off
+	  LabelGuidedReuse	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  13
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "warning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  LibraryContextMissingDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  14
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  15
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  16
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  17
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rfpro.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw OPTS=\"-DRUN_PHYSICS\""
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "rfpro.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "rFpro Target (Run Physics)"
+	  GenerateReport	  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation "off"
+	  SILDebugging		  off
+	  TargetLang		  "C++"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      18
+	      Version		      "1.18.1"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		Cell			"BlockCommentType"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      19
+	      Version		      "1.18.1"
+	      Array {
+		Type			"Cell"
+		Dimension		18
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"RemoveResetFunc"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"ExistingSharedCode"
+		Cell			"RemoveDisableFunc"
+		Cell			"PreserveStateflowLocalDataDimensions"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	off
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
+	      SystemTargetFile	      "rfpro.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  20
+		  Version		  "1.18.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    17
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "RemoveResetFunc"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "ExistingSharedCode"
+		    Cell		    "RemoveDisableFunc"
+		    PropName		    "DisabledProps"
+		  }
+		  Description		  ""
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  GenFloatMathFcnCalls	  "NOT IN USE"
+		  TargetLangStandard	  "C89/C90 (ANSI)"
+		  CodeReplacementLibrary  "None"
+		  UtilityFuncGeneration	  "Auto"
+		  MultiwordTypeDef	  "System defined"
+		  MultiwordLength	  2048
+		  DynamicStringBufferSize 256
+		  GenerateFullHeader	  on
+		  InferredTypesCompatibility off
+		  ExistingSharedCode	  ""
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns on
+		  CombineSignalStateStructs off
+		  GroupInternalDataByFunction off
+		  SuppressErrorStatus	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  CodeInterfacePackaging  "Nonreusable function"
+		  PurelyIntegerCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  RemoveDisableFunc	  off
+		  RemoveResetFunc	  off
+		  SupportVariableSizeSignals off
+		  ParenthesesLevel	  "Nominal"
+		  CastingMode		  "Nominal"
+		  PreserveStateflowLocalDataDimensions off
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  on
+		  AutosarCompliant	  off
+		  MDXCompliant		  off
+		  GRTInterface		  off
+		  GenerateAllocFcn	  off
+		  UseToolchainInfoCompliant off
+		  GenerateSharedConstants on
+		  CoderGroups		  []
+		  AccessMethods		  []
+		  LookupTableObjectStructAxisOrder "1,2,3,4,..."
+		  LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+		  LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+		  ArrayLayout		  "Column-major"
+		  UnsupportedSFcnMsg	  "error"
+		  ERTHeaderFileRootName	  "$R$E"
+		  ERTSourceFileRootName	  "$R$E"
+		  ERTDataFileRootName	  "$R_data"
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "ext_comm"
+		  ExtModeMexArgs	  ""
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		  MultiInstanceErrorCode  "Error"
+		}
+		PropName		"Components"
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  21
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Code Generation/Interface"
+      ConfigPrmDlgPosition    [ 1364, 437, 2919, 1558 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    9
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    22
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+  }
+  System {
+    Name		    "ExampleOpponentTelemetry"
+    Location		    [281, 133, 1493, 1292]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "rotated"
+    PaperPositionMode	    "auto"
+    PaperType		    "a4letter"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "83"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "154"
+    Block {
+      BlockType		      Reference
+      Name		      "Additional Vehicle"
+      SID		      "66"
+      Ports		      [15]
+      Position		      [765, 850, 960, 1230]
+      ZOrder		      17
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/Additional Vehicle"
+      SourceType	      "rFpro Additional Vehicle Interface"
+      ContentPreviewEnabled   off
+      VEH_FILE		      "'Hatchback_AWD_Blue'"
+      DRIVER_NAME	      "''"
+      UPGRADE_PACK	      "0"
+      SKIN		      "''"
+      HELMET		      "''"
+      COLLIDABLE	      off
+      TRANSPARENT_PROXIMITY   "0"
+      MANUAL_TRANSPARENCY     "0"
+      HEIGHT_VALID	      on
+      ORI_VALID		      off
+      HEADING_VALID	      on
+      VEL_VALID		      off
+      ROT_VALID		      off
+      GEAR_VALID	      off
+      RPM_VALID		      off
+      INPUTS_VALID	      on
+      BRAKE_LIGHT_VALID	      off
+      HEADLIGHT_VALID	      off
+      WHEEL_ROTATIONS_VALID   off
+      WHEEL_BRAKE_TEMPS_VALID off
+      WHEEL_HEIGHTS_VALID     off
+      period		      "0.01"
+      offset		      "0"
+      useReverseByteOrder     on
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Additional Vehicle1"
+      SID		      "83"
+      Ports		      [15]
+      Position		      [315, 850, 510, 1230]
+      ZOrder		      34
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/Additional Vehicle"
+      SourceType	      "rFpro Additional Vehicle Interface"
+      ContentPreviewEnabled   off
+      VEH_FILE		      "'Hatchback_AWD_White'"
+      DRIVER_NAME	      "''"
+      UPGRADE_PACK	      "0"
+      SKIN		      "''"
+      HELMET		      "''"
+      COLLIDABLE	      off
+      TRANSPARENT_PROXIMITY   "0"
+      MANUAL_TRANSPARENCY     "0"
+      HEIGHT_VALID	      on
+      ORI_VALID		      off
+      HEADING_VALID	      on
+      VEL_VALID		      on
+      ROT_VALID		      off
+      GEAR_VALID	      off
+      RPM_VALID		      off
+      INPUTS_VALID	      on
+      BRAKE_LIGHT_VALID	      off
+      HEADLIGHT_VALID	      off
+      WHEEL_ROTATIONS_VALID   on
+      WHEEL_BRAKE_TEMPS_VALID off
+      WHEEL_HEIGHTS_VALID     off
+      period		      "0.01"
+      offset		      "0"
+      useReverseByteOrder     on
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Cam View"
+      SID		      "116"
+      Position		      [345, 295, 375, 325]
+      ZOrder		      67
+      Value		      "3"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Car Fixed"
+      SID		      "144"
+      Position		      [785, 284, 890, 306]
+      ZOrder		      89
+      NamePlacement	      "alternate"
+      Value		      "[0 0 0.5]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Car1 Position"
+      SID		      "99"
+      Position		      [150, 854, 255, 876]
+      ZOrder		      50
+      NamePlacement	      "alternate"
+      Value		      "[1 30 0.5]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Car1 Velocity"
+      SID		      "112"
+      Position		      [150, 929, 255, 951]
+      ZOrder		      63
+      Value		      "[0 0 0 ]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "CarWheel Velocity"
+      SID		      "140"
+      Position		      [150, 1154, 255, 1176]
+      ZOrder		      85
+      Value		      "[0 0 0 0]"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "2"
+      Position		      [895, 245, 925, 275]
+      ZOrder		      -2
+      ShowName		      off
+      Value		      "false"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Fixed Yaw"
+      SID		      "133"
+      Position		      [150, 904, 255, 926]
+      ZOrder		      82
+      NamePlacement	      "alternate"
+      Value		      "-60*pi/180"
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground10"
+      SID		      "15"
+      Position		      [900, 635, 920, 655]
+      ZOrder		      -11
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground11"
+      SID		      "16"
+      Position		      [900, 670, 920, 690]
+      ZOrder		      -12
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground12"
+      SID		      "51"
+      Position		      [900, 705, 920, 725]
+      ZOrder		      2
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground13"
+      SID		      "111"
+      Position		      [270, 880, 290, 900]
+      ZOrder		      62
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground14"
+      SID		      "69"
+      Position		      [680, 930, 700, 950]
+      ZOrder		      29
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground15"
+      SID		      "70"
+      Position		      [710, 1155, 730, 1175]
+      ZOrder		      28
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground16"
+      SID		      "71"
+      Position		      [680, 1180, 700, 1200]
+      ZOrder		      27
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground17"
+      SID		      "72"
+      Position		      [710, 1205, 730, 1225]
+      ZOrder		      31
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground18"
+      SID		      "73"
+      Position		      [710, 955, 730, 975]
+      ZOrder		      26
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground19"
+      SID		      "74"
+      Position		      [680, 980, 700, 1000]
+      ZOrder		      25
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground2"
+      SID		      "5"
+      Position		      [900, 355, 920, 375]
+      ZOrder		      -13
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground20"
+      SID		      "75"
+      Position		      [710, 1005, 730, 1025]
+      ZOrder		      24
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground22"
+      SID		      "77"
+      Position		      [710, 1055, 730, 1075]
+      ZOrder		      22
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground24"
+      SID		      "79"
+      Position		      [710, 1105, 730, 1125]
+      ZOrder		      20
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground25"
+      SID		      "80"
+      Position		      [680, 1130, 700, 1150]
+      ZOrder		      19
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground26"
+      SID		      "109"
+      Position		      [680, 880, 700, 900]
+      ZOrder		      60
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground3"
+      SID		      "6"
+      Position		      [900, 390, 920, 410]
+      ZOrder		      -14
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground31"
+      SID		      "87"
+      Position		      [270, 1180, 290, 1200]
+      ZOrder		      43
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground32"
+      SID		      "88"
+      Position		      [270, 1205, 290, 1225]
+      ZOrder		      47
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground33"
+      SID		      "89"
+      Position		      [270, 955, 290, 975]
+      ZOrder		      42
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground34"
+      SID		      "90"
+      Position		      [270, 980, 290, 1000]
+      ZOrder		      41
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground35"
+      SID		      "91"
+      Position		      [270, 1005, 290, 1025]
+      ZOrder		      40
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground39"
+      SID		      "95"
+      Position		      [270, 1105, 290, 1125]
+      ZOrder		      36
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground4"
+      SID		      "7"
+      Position		      [900, 425, 920, 445]
+      ZOrder		      -15
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground40"
+      SID		      "96"
+      Position		      [270, 1130, 290, 1150]
+      ZOrder		      35
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground5"
+      SID		      "8"
+      Position		      [900, 460, 920, 480]
+      ZOrder		      -16
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground6"
+      SID		      "9"
+      Position		      [900, 495, 920, 515]
+      ZOrder		      -17
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground7"
+      SID		      "10"
+      Position		      [900, 530, 920, 550]
+      ZOrder		      -18
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground8"
+      SID		      "11"
+      Position		      [900, 565, 920, 585]
+      ZOrder		      -19
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground9"
+      SID		      "12"
+      Position		      [900, 600, 920, 620]
+      ZOrder		      -20
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Look along axis"
+      SID		      "145"
+      Position		      [785, 319, 890, 341]
+      ZOrder		      90
+      Value		      "[1 0 0; 0 1 0; 0 0 1 ]"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "104"
+      Ports		      [3, 1]
+      Position		      [660, 788, 665, 942]
+      ZOrder		      55
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      "149"
+      Ports		      [2, 1]
+      Position		      [355, 391, 360, 429]
+      ZOrder		      795
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      SID		      "150"
+      Ports		      [2, 1]
+      Position		      [355, 491, 360, 544]
+      ZOrder		      796
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux4"
+      SID		      "152"
+      Ports		      [2, 1]
+      Position		      [355, 646, 360, 699]
+      ZOrder		      798
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Opponent IDs"
+      SID		      "30"
+      Ports		      [1]
+      Position		      [545, 386, 630, 434]
+      ZOrder		      -4
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Opponent Telemetry"
+      SID		      "146"
+      Ports		      [0, 3]
+      Position		      [55, 247, 235, 393]
+      ZOrder		      792
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/Opponent Telemetry"
+      SourceType	      "rFpro Physics Interface"
+      ContentPreviewEnabled   off
+      veh_select	      "Nth Nearest"
+      veh_id		      "0"
+      ext_id		      off
+      rFpro__platform	      "Remote Model - Default"
+      pick_Veh_ID	      on
+      pick_Lap		      off
+      pick_Gear		      off
+      pick_Sector	      off
+      pick_Vis_Wheel_Range    off
+      pick_PG_Offset	      off
+      pick_Phys_Wheel_Range   off
+      pick_Standard_Location  off
+      pick_Brake_Torque	      off
+      pick_sLap_Ref	      off
+      pick_DT		      off
+      pick_ET		      off
+      pick_LapStart	      off
+      pick_Pos		      on
+      pick_Vel		      on
+      pick_Accel	      off
+      pick_Ori		      off
+      pick_Rot		      off
+      pick_RotAccel	      off
+      pick_RPM		      off
+      pick_WaterT	      off
+      pick_OilT		      off
+      pick_Clutch_RPM	      off
+      pick_UF_Throttle	      off
+      pick_UF_Brake	      off
+      pick_UF_Steer	      off
+      pick_UF_Clutch	      off
+      pick_F_Throttle	      off
+      pick_F_Brake	      off
+      pick_F_Steer	      off
+      pick_F_Clutch	      off
+      pick_Steer_F	      off
+      pick_F3_Move	      off
+      pick_R3_Move	      off
+      pick_F_Wing	      off
+      pick_F_Ride	      off
+      pick_R_Ride	      off
+      pick_Drag		      off
+      pick_F_Down_F	      off
+      pick_R_Down_F	      off
+      pick_Fuel		      off
+      pick_Max_RPM	      off
+      pick_Impact_ET	      off
+      pick_Impact_Mag	      off
+      pick_Impact_Pos	      off
+      pick_Engine_Torque      off
+      pick_Fuel_capacity      off
+      pick_R_Brake_Bias	      off
+      pick_Turbo_P	      off
+      pick_Lap_Dist	      off
+      pick_Dist_To_Groove     off
+      pick_Stops	      off
+      pick_Overheating	      off
+      pick_Detached	      off
+      pick_Headlights	      off
+      pick_Dent_Severity      off
+      pick_Speed_Limiter      off
+      pick_Max_Gears	      off
+      pick_FT_Compound_idx    off
+      pick_RT_Compound_idx    off
+      pick_F_Flap	      off
+      pick_R_Flap	      off
+      pick_Ig_Starter	      off
+      pick_Have_Speed_Limiter off
+      pick_Anti_Stall_Active  off
+      pick_Beacons	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Opponent Telemetry1"
+      SID		      "147"
+      Ports		      [0, 3]
+      Position		      [55, 562, 235, 708]
+      ZOrder		      793
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/Opponent Telemetry"
+      SourceType	      "rFpro Physics Interface"
+      ContentPreviewEnabled   off
+      veh_select	      "Nth Nearest"
+      veh_id		      "1"
+      ext_id		      off
+      rFpro__platform	      "Remote Model - Default"
+      pick_Veh_ID	      on
+      pick_Lap		      off
+      pick_Gear		      off
+      pick_Sector	      off
+      pick_Vis_Wheel_Range    off
+      pick_PG_Offset	      off
+      pick_Phys_Wheel_Range   off
+      pick_Standard_Location  off
+      pick_Brake_Torque	      off
+      pick_sLap_Ref	      off
+      pick_DT		      off
+      pick_ET		      off
+      pick_LapStart	      off
+      pick_Pos		      on
+      pick_Vel		      on
+      pick_Accel	      off
+      pick_Ori		      off
+      pick_Rot		      off
+      pick_RotAccel	      off
+      pick_RPM		      off
+      pick_WaterT	      off
+      pick_OilT		      off
+      pick_Clutch_RPM	      off
+      pick_UF_Throttle	      off
+      pick_UF_Brake	      off
+      pick_UF_Steer	      off
+      pick_UF_Clutch	      off
+      pick_F_Throttle	      off
+      pick_F_Brake	      off
+      pick_F_Steer	      off
+      pick_F_Clutch	      off
+      pick_Steer_F	      off
+      pick_F3_Move	      off
+      pick_R3_Move	      off
+      pick_F_Wing	      off
+      pick_F_Ride	      off
+      pick_R_Ride	      off
+      pick_Drag		      off
+      pick_F_Down_F	      off
+      pick_R_Down_F	      off
+      pick_Fuel		      off
+      pick_Max_RPM	      off
+      pick_Impact_ET	      off
+      pick_Impact_Mag	      off
+      pick_Impact_Pos	      off
+      pick_Engine_Torque      off
+      pick_Fuel_capacity      off
+      pick_R_Brake_Bias	      off
+      pick_Turbo_P	      off
+      pick_Lap_Dist	      off
+      pick_Dist_To_Groove     off
+      pick_Stops	      off
+      pick_Overheating	      off
+      pick_Detached	      off
+      pick_Headlights	      off
+      pick_Dent_Severity      off
+      pick_Speed_Limiter      off
+      pick_Max_Gears	      off
+      pick_FT_Compound_idx    off
+      pick_RT_Compound_idx    off
+      pick_F_Flap	      off
+      pick_R_Flap	      off
+      pick_Ig_Starter	      off
+      pick_Have_Speed_Limiter off
+      pick_Anti_Stall_Active  off
+      pick_Beacons	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Physics Visualisation"
+      SID		      "118"
+      Ports		      [14]
+      Position		      [955, 236, 1130, 739]
+      ZOrder		      69
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/Physics Visualisation"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      PAR_SKIP_INTERNAL_PHYSICS	off
+      PAR_ACCEL_VALID	      off
+      PAR_ROT_ACCEL_VALID     off
+      PAR_GEAR_VALID	      off
+      PAR_RPM_VALID	      off
+      PAR_INPUTS_VALID	      off
+      PAR_STEER_TORQUE_VALID  off
+      PAR_HEADLIGHTS_ON_VALID off
+      PAR_WHEEL_POS_VALID     off
+      PAR_WHEEL_ORI_VALID     off
+      PAR_TYRE_PARAMS_VALID   off
+      PAR_WHEEL_ROTATION_VALID off
+      PAR_WHEEL_BRAKE_TEMP_VALID off
+      PAR_WHEEL_TREAD_TEMP_VALID off
+      PAR_WHEEL_AIR_TEMP_VALID off
+      period		      "-1"
+      offset		      "0"
+      useReverseByteOrder     on
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Positions"
+      SID		      "38"
+      Ports		      [1]
+      Position		      [465, 484, 630, 556]
+      ZOrder		      -6
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Reshape
+      Name		      "Reshape"
+      SID		      "153"
+      Ports		      [1, 1]
+      Position		      [385, 508, 415, 532]
+      ZOrder		      799
+      OutputDimensionality    "Customize"
+      OutputDimensions	      "[3,2]"
+    }
+    Block {
+      BlockType		      Reshape
+      Name		      "Reshape1"
+      SID		      "154"
+      Ports		      [1, 1]
+      Position		      [385, 663, 415, 687]
+      ZOrder		      800
+      OutputDimensionality    "Customize"
+      OutputDimensions	      "[3,2]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Set Camera View"
+      SID		      "114"
+      Ports		      [2]
+      Position		      [435, 250, 630, 330]
+      ZOrder		      65
+      HideAutomaticName	      off
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/Set Camera View"
+      SourceType	      "rFpro Physics Toolbox"
+      ContentPreviewEnabled   off
+      triggerWidth	      "1"
+      useReverseByteOrder     off
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Velocities"
+      SID		      "36"
+      Ports		      [1]
+      Position		      [465, 637, 630, 713]
+      ZOrder		      -7
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Yaw"
+      SID		      "108"
+      Ports		      [0, 1]
+      Position		      [710, 905, 730, 925]
+      ZOrder		      59
+      LibraryVersion	      "1.444"
+      SourceBlock	      "simulink/Sources/Repeating\nSequence"
+      SourceType	      "Repeating table"
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   off
+      rep_seq_t		      "[0 6]"
+      rep_seq_y		      "[0 -2*pi]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "rFpro Setup"
+      SID		      "124"
+      Ports		      []
+      Position		      [55, 117, 235, 218]
+      ZOrder		      75
+      LibraryVersion	      "1.1164"
+      SourceBlock	      "rFproPhysicsLib/rFpro Setup"
+      SourceType	      "rFpro Remote Physics Block"
+      ContentPreviewEnabled   off
+      platform		      "Remote Model - Default"
+      stopOnSessionEnd	      on
+      usePseudoRealtime	      on
+      syncToRF		      on
+      useReverseByteOrder     off
+      useRfTime		      on
+      minIterations	      "4"
+      maxIterations	      "1000"
+      ipReceiveAddress	      "'127.0.0.1'"
+      ipReceivePort	      "11054"
+      receiveSampleTime	      "-1"
+      ipTransmitAddress	      "'127.0.0.1'"
+      ipTransmitPort	      "11052"
+      transmitSampleTime      "-1"
+      pluginType	      "RUN_PHYSICS"
+      sysTarget		      "xpctarget.tlc"
+      templateMakeFile	      "xpc_default_tmf"
+      makeCommand	      "make_rtw"
+      buildDesc		      "xPC target"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "xPos"
+      SID		      "101"
+      Ports		      [0, 1]
+      Position		      [590, 800, 620, 830]
+      ZOrder		      52
+      Amplitude		      "20"
+      Bias		      "30"
+      Frequency		      "2*pi/6"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "yPos"
+      SID		      "102"
+      Ports		      [0, 1]
+      Position		      [590, 850, 620, 880]
+      ZOrder		      53
+      Amplitude		      "20"
+      Frequency		      "2*pi/6"
+      Phase		      "pi/2"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "zPos"
+      SID		      "103"
+      Position		      [590, 899, 620, 931]
+      ZOrder		      54
+      Value		      "0.5"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "zPos1"
+      SID		      "138"
+      Position		      [675, 1029, 700, 1051]
+      ZOrder		      83
+      ShowName		      off
+      Value		      "0.0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "zPos2"
+      SID		      "139"
+      Position		      [675, 1079, 700, 1101]
+      ZOrder		      84
+      ShowName		      off
+      Value		      "0.8"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "zPos3"
+      SID		      "141"
+      Position		      [270, 1031, 290, 1049]
+      ZOrder		      86
+      ShowName		      off
+      Value		      "0.0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "zPos4"
+      SID		      "142"
+      Position		      [270, 1081, 290, 1099]
+      ZOrder		      87
+      ShowName		      off
+      Value		      "0.0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "zPos5"
+      SID		      "143"
+      Position		      [270, 1056, 290, 1074]
+      ZOrder		      88
+      ShowName		      off
+      Value		      "1.0"
+    }
+    Line {
+      ZOrder		      1
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      171
+      SrcBlock		      "Car Fixed"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      172
+      SrcBlock		      "Look along axis"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      4
+      SrcBlock		      "Ground2"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      5
+      SrcBlock		      "Ground3"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      6
+      SrcBlock		      "Ground4"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      7
+      SrcBlock		      "Ground5"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      8
+      SrcBlock		      "Ground6"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      9
+      SrcBlock		      "Ground7"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      10
+      SrcBlock		      "Ground8"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      10
+    }
+    Line {
+      ZOrder		      11
+      SrcBlock		      "Ground9"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      11
+    }
+    Line {
+      ZOrder		      12
+      SrcBlock		      "Ground10"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      12
+    }
+    Line {
+      ZOrder		      13
+      SrcBlock		      "Ground11"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      13
+    }
+    Line {
+      ZOrder		      21
+      SrcBlock		      "Ground12"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      14
+    }
+    Line {
+      ZOrder		      22
+      SrcBlock		      "Ground17"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      15
+    }
+    Line {
+      ZOrder		      23
+      SrcBlock		      "Ground16"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      14
+    }
+    Line {
+      ZOrder		      24
+      SrcBlock		      "Ground15"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      13
+    }
+    Line {
+      ZOrder		      25
+      SrcBlock		      "Ground25"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      12
+    }
+    Line {
+      ZOrder		      26
+      SrcBlock		      "Ground24"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      11
+    }
+    Line {
+      ZOrder		      135
+      SrcBlock		      "zPos2"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      10
+    }
+    Line {
+      ZOrder		      28
+      SrcBlock		      "Ground22"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      134
+      SrcBlock		      "zPos1"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      30
+      SrcBlock		      "Ground20"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      31
+      SrcBlock		      "Ground19"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      32
+      SrcBlock		      "Ground18"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      33
+      SrcBlock		      "Ground14"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      34
+      SrcBlock		      "Yaw"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      35
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      37
+      SrcBlock		      "Ground32"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      15
+    }
+    Line {
+      ZOrder		      38
+      SrcBlock		      "Ground31"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      14
+    }
+    Line {
+      ZOrder		      136
+      SrcBlock		      "CarWheel Velocity"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      13
+    }
+    Line {
+      ZOrder		      40
+      SrcBlock		      "Ground40"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      12
+    }
+    Line {
+      ZOrder		      41
+      SrcBlock		      "Ground39"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      11
+    }
+    Line {
+      ZOrder		      138
+      SrcBlock		      "zPos4"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      10
+    }
+    Line {
+      ZOrder		      139
+      SrcBlock		      "zPos5"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      137
+      SrcBlock		      "zPos3"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      45
+      SrcBlock		      "Ground35"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      46
+      SrcBlock		      "Ground34"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      47
+      SrcBlock		      "Ground33"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      48
+      SrcBlock		      "Car1 Velocity"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      87
+      SrcBlock		      "Fixed Yaw"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      50
+      SrcBlock		      "Car1 Position"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      52
+      SrcBlock		      "xPos"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      53
+      SrcBlock		      "yPos"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      54
+      SrcBlock		      "zPos"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      55
+      SrcBlock		      "Ground26"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      65
+      SrcBlock		      "Cam View"
+      SrcPort		      1
+      DstBlock		      "Set Camera View"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      230
+      SrcBlock		      "Opponent Telemetry"
+      SrcPort		      1
+      Points		      [83, 0]
+      Branch {
+	ZOrder			244
+	Points			[0, 130]
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			235
+	DstBlock		"Set Camera View"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      86
+      SrcBlock		      "Ground13"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      234
+      SrcBlock		      "Opponent Telemetry1"
+      SrcPort		      1
+      Points		      [84, 0; 0, -165]
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      231
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Opponent IDs"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      246
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "Reshape"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      238
+      SrcBlock		      "Opponent Telemetry"
+      SrcPort		      2
+      Points		      [69, 0; 0, 185]
+      DstBlock		      "Mux2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      239
+      SrcBlock		      "Opponent Telemetry1"
+      SrcPort		      2
+      Points		      [69, 0; 0, -105]
+      DstBlock		      "Mux2"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      249
+      SrcBlock		      "Mux4"
+      SrcPort		      1
+      DstBlock		      "Reshape1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      241
+      SrcBlock		      "Opponent Telemetry1"
+      SrcPort		      3
+      DstBlock		      "Mux4"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      242
+      SrcBlock		      "Opponent Telemetry"
+      SrcPort		      3
+      Points		      [33, 0; 0, 290]
+      DstBlock		      "Mux4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      247
+      SrcBlock		      "Reshape"
+      SrcPort		      1
+      DstBlock		      "Positions"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      250
+      SrcBlock		      "Reshape1"
+      SrcPort		      1
+      DstBlock		      "Velocities"
+      DstPort		      1
+    }
+    Annotation {
+      SID		      "137"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Arial'; font-size:14px; font-weight:400; font-style:normal;\">\n<p "
+      "style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0"
+      "px;\"><span style=\" font-size:14px;\">Run this example on the 2DFlat track.</span></p>\n<p style=\"-qt-paragrap"
+      "h-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-ind"
+      "ent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-blo"
+      "ck-indent:0; text-indent:0px;\"><span style=\" font-size:14px; font-weight:600;\">NOTE: </span><span style=\" fo"
+      "nt-size:14px;\">The Remote Model Plugin's ini file needs to be set to send position and velocity opponent teleme"
+      "try.</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-ind"
+      "ent:0; text-indent:0px;\"><span style=\" font-size:14px;\">            See the rFpro_Remote_Model_Plugin user gu"
+      "ide for more information.</span></p></body></html>"
+      Position		      [292, 117, 957, 183]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -1
+      FontName		      "Arial"
+      FontSize		      14
+    }
+    Annotation {
+      SID		      "136"
+      Name		      "Switch Swing Cam to nearest car to ego car"
+      Position		      [355, 220, 629, 238]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -1
+      FontSize		      14
+    }
+    Annotation {
+      SID		      "135"
+      Name		      "Circling Car"
+      Position		      [823, 806, 905, 824]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -2
+      FontName		      "Arial"
+      FontSize		      14
+      FontWeight	      "bold"
+    }
+    Annotation {
+      SID		      "134"
+      Name		      "Stationary Car"
+      Position		      [364, 806, 462, 824]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -3
+      FontName		      "Arial"
+      FontSize		      14
+      FontWeight	      "bold"
+    }
+    Annotation {
+      SID		      "49"
+      Name		      "Demonstration of Opponent Telemtry block"
+      Position		      [419, 71, 831, 96]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      ZOrder		      -1
+      FontName		      "Arial"
+      FontSize		      20
+      FontWeight	      "bold"
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000014
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "ExampleOpponentTelemetry"
+    created		    "25-Feb-2020 16:03:39"
+    isLibrary		    0
+    sfVersion		    80000014
+    firstTarget		    2
+  }
+  target {
+    id			    2
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 3]
+  }
+  target {
+    id			    3
+    machine		    1
+    name		    "rtw"
+    linkNode		    [1 2 0]
+  }
+}

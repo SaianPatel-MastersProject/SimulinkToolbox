@@ -1,0 +1,4316 @@
+Model {
+  Name			  "ExampleAdditionalVehicle"
+  Version		  9.2
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.186"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 17
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Additional Vehicle"
+      Path		      "ExampleAdditionalVehicle/Additional Vehicle 1"
+      SID		      "763"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Additional Vehicle"
+      Path		      "ExampleAdditionalVehicle/Additional Vehicle 2"
+      SID		      "764"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "ExampleAdditionalVehicle/Compare To Constant"
+      SID		      "956"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "ExampleAdditionalVehicle/Compare To Constant1"
+      SID		      "957"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Driver Input"
+      Path		      "ExampleAdditionalVehicle/Driver Input"
+      SID		      "859"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Physics Visualisation"
+      Path		      "ExampleAdditionalVehicle/Physics Visualisation"
+      SID		      "861"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Internal Utility/Simple Vehicle Model"
+      Path		      "ExampleAdditionalVehicle/Simple Vehicle Model"
+      SID		      "880"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Starting Vehicle Location"
+      Path		      "ExampleAdditionalVehicle/Starting Vehicle Location"
+      SID		      "1"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Tyre Contact"
+      Path		      "ExampleAdditionalVehicle/Tyre Contact V02"
+      SID		      "876"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Tyre Contact"
+      Path		      "ExampleAdditionalVehicle/Tyre Contact V1"
+      SID		      "877"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Tyre Contact"
+      Path		      "ExampleAdditionalVehicle/Tyre Contact V2"
+      SID		      "878"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Tyre Contact"
+      Path		      "ExampleAdditionalVehicle/Tyre Contact V3"
+      SID		      "879"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Wheel Visualisation"
+      Path		      "ExampleAdditionalVehicle/Wheel Visualisation FL"
+      SID		      "869"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Wheel Visualisation"
+      Path		      "ExampleAdditionalVehicle/Wheel Visualisation FR"
+      SID		      "870"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Wheel Visualisation"
+      Path		      "ExampleAdditionalVehicle/Wheel Visualisation RL"
+      SID		      "871"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/Wheel Visualisation"
+      Path		      "ExampleAdditionalVehicle/Wheel Visualisation RR"
+      SID		      "872"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "rFproPhysicsLib/rFpro Setup"
+      Path		      "ExampleAdditionalVehicle/rFpro Setup"
+      SID		      "874"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  DiagnosticSuppressor	  "on"
+  WebScopes_FoundationPlugin "on"
+  NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [251.0, 121.0, 1651.0, 986.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[59]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [2399.0, 1226.0]
+	  ZoomFactor		  [0.54662973222530009]
+	  Offset		  [-197.90371621621625, 145.38851351351343]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "763"
+	  Extents		  [3165.0, 1845.0]
+	  ZoomFactor		  [2.0]
+	  Offset		  [-14.125, 774.71428571428578]
+	}
+	PropName		"EditorsInfo"
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		7
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[426]
+	Height			[320]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAACTAP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAAUwD///8AAAmXAAAFHQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACp/////wAAAAAAAAAA/////wEAAAEu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAHX/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAQy/////wAAAAAAAAAA/"
+      "////wEAAARz/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+    }
+  }
+  HideAutomaticNames	  on
+  Created		  "Mon Aug 19 11:33:39 2013"
+  Creator		  "enewton"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "SeanKavanagh"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Nov 29 14:51:33 2023"
+  RTWModifiedTimeStamp	  623170269
+  ModelVersionFormat	  "1.%<AutoIncrement:186>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ShowSubsystemDomainSpec off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  on
+  MultiThreadCoSim	  on
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "ReferencedWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    8
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "ExampleAdditionalVehicle"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "ExampleAdditionalVehicle"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  TunableVars		  "LOCAL_PORT_RECV,REMOTE_PORT_RECV,gCGHeight,gFrontTrack,gFrontWheelRadius,gLeftWheelBase,gRearTrack,g"
+  "RearWheelRadius,gRightWheelBase"
+  TunableVarsStorageClass "Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+  TunableVarsTypeQualifier ",,,,,,,,"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      9
+      Version		      "1.18.1"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  10
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  on
+	  ConcurrentTasks	  off
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  11
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  12
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Inlined"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  UseRowMajorAlgorithm	  off
+	  LabelGuidedReuse	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  13
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "warning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  LibraryContextMissingDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  14
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  64
+	  TargetBitPerSizeT	  64
+	  TargetBitPerPtrDiffT	  64
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  on
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "LittleEndian"
+	  TargetWordSize	  64
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "MATLAB Host"
+	  TargetUnknown		  off
+	  ProdEqTarget		  off
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  15
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  16
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  17
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rfpro.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw OPTS=\"-DRUN_PHYSICS\""
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "rfpro.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "rFpro Target (Run Physics)"
+	  GenerateReport	  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation "off"
+	  SILDebugging		  off
+	  TargetLang		  "C++"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "on"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      18
+	      Version		      "1.18.1"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		Cell			"BlockCommentType"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      19
+	      Version		      "1.18.1"
+	      Array {
+		Type			"Cell"
+		Dimension		18
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"PreserveStateflowLocalDataDimensions"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"ExistingSharedCode"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	off
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
+	      SystemTargetFile	      "rfpro.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  20
+		  Version		  "1.18.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    17
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "RemoveResetFunc"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "ExistingSharedCode"
+		    Cell		    "RemoveDisableFunc"
+		    PropName		    "DisabledProps"
+		  }
+		  Description		  ""
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  GenFloatMathFcnCalls	  "NOT IN USE"
+		  TargetLangStandard	  "C89/C90 (ANSI)"
+		  CodeReplacementLibrary  "None"
+		  UtilityFuncGeneration	  "Auto"
+		  MultiwordTypeDef	  "System defined"
+		  MultiwordLength	  2048
+		  DynamicStringBufferSize 256
+		  GenerateFullHeader	  on
+		  InferredTypesCompatibility off
+		  ExistingSharedCode	  ""
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns on
+		  CombineSignalStateStructs off
+		  GroupInternalDataByFunction off
+		  SuppressErrorStatus	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  CodeInterfacePackaging  "Nonreusable function"
+		  PurelyIntegerCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  RemoveDisableFunc	  off
+		  RemoveResetFunc	  off
+		  SupportVariableSizeSignals off
+		  ParenthesesLevel	  "Nominal"
+		  CastingMode		  "Nominal"
+		  PreserveStateflowLocalDataDimensions off
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  on
+		  AutosarCompliant	  off
+		  MDXCompliant		  off
+		  GRTInterface		  off
+		  GenerateAllocFcn	  off
+		  UseToolchainInfoCompliant off
+		  GenerateSharedConstants on
+		  CoderGroups		  []
+		  AccessMethods		  []
+		  LookupTableObjectStructAxisOrder "1,2,3,4,..."
+		  LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+		  LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+		  ArrayLayout		  "Column-major"
+		  UnsupportedSFcnMsg	  "error"
+		  ERTHeaderFileRootName	  "$R$E"
+		  ERTSourceFileRootName	  "$R$E"
+		  ERTDataFileRootName	  "$R_data"
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "ext_comm"
+		  ExtModeMexArgs	  ""
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		  MultiInstanceErrorCode  "Error"
+		}
+		PropName		"Components"
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  21
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Code Generation/Interface"
+      ConfigPrmDlgPosition    [ 1322, 499, 2518, 1525 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    9
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    22
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Bias
+      Bias		      "0"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      DeadZone
+      LowerValue	      "-0.5"
+      UpperValue	      "0.5"
+      SaturateOnIntegerOverflow	on
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "ExampleAdditionalVehicle"
+    Location		    [251, 121, 1902, 1107]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "rotated"
+    PaperPositionMode	    "auto"
+    PaperType		    "a4letter"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "55"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "963"
+    Block {
+      BlockType		      Reference
+      Name		      "Additional Vehicle 1"
+      SID		      "763"
+      Ports		      [15]
+      Position		      [2320, 396, 2505, 834]
+      ZOrder		      -2
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Additional Vehicle"
+      SourceType	      "rFpro Additional Vehicle Interface"
+      ContentPreviewEnabled   off
+      VEH_FILE		      "'Hatchback_AWD_Red'"
+      DRIVER_NAME	      "''"
+      UPGRADE_PACK	      "0"
+      SKIN		      "''"
+      HELMET		      "''"
+      COLLIDABLE	      off
+      TRANSPARENT_PROXIMITY   "0"
+      MANUAL_TRANSPARENCY     "0"
+      HEIGHT_VALID	      off
+      ORI_VALID		      on
+      HEADING_VALID	      off
+      VEL_VALID		      on
+      ROT_VALID		      off
+      GEAR_VALID	      off
+      RPM_VALID		      off
+      INPUTS_VALID	      on
+      BRAKE_LIGHT_VALID	      on
+      HEADLIGHT_VALID	      off
+      WHEEL_ROTATIONS_VALID   on
+      WHEEL_BRAKE_TEMPS_VALID off
+      WHEEL_HEIGHTS_VALID     off
+      period		      "0.01"
+      offset		      "0"
+      useReverseByteOrder     on
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Additional Vehicle 2"
+      SID		      "764"
+      Ports		      [15]
+      Position		      [2320, 981, 2505, 1419]
+      ZOrder		      -3
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Additional Vehicle"
+      SourceType	      "rFpro Additional Vehicle Interface"
+      ContentPreviewEnabled   off
+      VEH_FILE		      "'Hatchback_AWD_Red'"
+      DRIVER_NAME	      "''"
+      UPGRADE_PACK	      "0"
+      SKIN		      "''"
+      HELMET		      "''"
+      COLLIDABLE	      off
+      TRANSPARENT_PROXIMITY   "0"
+      MANUAL_TRANSPARENCY     "0"
+      HEIGHT_VALID	      off
+      ORI_VALID		      on
+      HEADING_VALID	      off
+      VEL_VALID		      on
+      ROT_VALID		      off
+      GEAR_VALID	      off
+      RPM_VALID		      off
+      INPUTS_VALID	      on
+      BRAKE_LIGHT_VALID	      on
+      HEADLIGHT_VALID	      off
+      WHEEL_ROTATIONS_VALID   on
+      WHEEL_BRAKE_TEMPS_VALID off
+      WHEEL_HEIGHTS_VALID     off
+      period		      "0.01"
+      offset		      "0"
+      useReverseByteOrder     on
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Bias
+      Name		      "Bias1"
+      SID		      "710"
+      Position		      [2195, 389, 2260, 421]
+      ZOrder		      -5
+      ShowName		      off
+      Bias		      "[0,3,0]"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Bias
+      Name		      "Bias2"
+      SID		      "727"
+      Position		      [2200, 974, 2265, 1006]
+      ZOrder		      -6
+      ShowName		      off
+      Bias		      "[0,-3,0]"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Compare\nTo Constant"
+      SID		      "956"
+      Ports		      [1, 1]
+      Position		      [2185, 692, 2225, 718]
+      ZOrder		      277
+      ShowName		      off
+      LibraryVersion	      "1.444"
+      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      SourceType	      "Compare To Constant"
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   off
+      relop		      ">"
+      const		      "0.05"
+      OutDataTypeStr	      "uint8"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Compare\nTo Constant1"
+      SID		      "957"
+      Ports		      [1, 1]
+      Position		      [2190, 1277, 2230, 1303]
+      ZOrder		      278
+      ShowName		      off
+      LibraryVersion	      "1.444"
+      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      SourceType	      "Compare To Constant"
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   off
+      relop		      ">"
+      const		      "0.05"
+      OutDataTypeStr	      "uint8"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      SID		      "79"
+      Position		      [1715, 421, 1745, 439]
+      ZOrder		      -17
+      ShowName		      off
+      Value		      "false"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion"
+      SID		      "961"
+      Position		      [2265, 693, 2300, 717]
+      ZOrder		      282
+      ShowName		      off
+      OutDataTypeStr	      "int8"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion1"
+      SID		      "962"
+      Position		      [2265, 1278, 2300, 1302]
+      ZOrder		      283
+      ShowName		      off
+      OutDataTypeStr	      "int8"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DeadZone
+      Name		      "Dead Zone"
+      SID		      "958"
+      Position		      [1670, 835, 1700, 865]
+      ZOrder		      279
+      LowerValue	      "-0.05"
+      UpperValue	      "0.05"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      "881"
+      Ports		      [1, 4]
+      Position		      [1290, 597, 1295, 698]
+      ZOrder		      203
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux1"
+      SID		      "882"
+      Ports		      [1, 4]
+      Position		      [1135, 702, 1140, 803]
+      ZOrder		      208
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Driver Input"
+      SID		      "859"
+      Ports		      [0, 12]
+      Position		      [25, 547, 210, 913]
+      ZOrder		      8
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Driver Input"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      From
+      Name		      "From"
+      SID		      "84"
+      Position		      [1555, 522, 1640, 548]
+      ZOrder		      -77
+      ShowName		      off
+      GotoTag		      "Velocity"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      SID		      "895"
+      Position		      [715, 719, 815, 741]
+      ZOrder		      217
+      ShowName		      off
+      GotoTag		      "Wheel_FR_H"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From10"
+      SID		      "909"
+      Position		      [1345, 1137, 1430, 1163]
+      ZOrder		      231
+      ShowName		      off
+      GotoTag		      "Wheel_FL_V"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From11"
+      SID		      "916"
+      Position		      [1670, 1327, 1755, 1353]
+      ZOrder		      238
+      ShowName		      off
+      GotoTag		      "Wheel_RR_Pos"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From12"
+      SID		      "910"
+      Position		      [1345, 987, 1430, 1013]
+      ZOrder		      232
+      ShowName		      off
+      GotoTag		      "Wheel_FL_Pos"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From13"
+      SID		      "913"
+      Position		      [1670, 1142, 1755, 1168]
+      ZOrder		      235
+      ShowName		      off
+      GotoTag		      "Wheel_FR_V"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From14"
+      SID		      "914"
+      Position		      [1670, 992, 1755, 1018]
+      ZOrder		      236
+      ShowName		      off
+      GotoTag		      "Wheel_FR_Pos"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From15"
+      SID		      "918"
+      Position		      [760, 552, 845, 578]
+      ZOrder		      242
+      ShowName		      off
+      GotoTag		      "Throttle"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From16"
+      SID		      "911"
+      Position		      [1345, 1477, 1430, 1503]
+      ZOrder		      233
+      ShowName		      off
+      GotoTag		      "Wheel_RL_V"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From17"
+      SID		      "912"
+      Position		      [1345, 1327, 1430, 1353]
+      ZOrder		      234
+      ShowName		      off
+      GotoTag		      "Wheel_RL_Pos"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From18"
+      SID		      "915"
+      Position		      [1670, 1477, 1755, 1503]
+      ZOrder		      237
+      ShowName		      off
+      GotoTag		      "Wheel_RR_V"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From19"
+      SID		      "709"
+      Position		      [2080, 392, 2165, 418]
+      ZOrder		      -88
+      ShowName		      off
+      GotoTag		      "Position"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From2"
+      SID		      "86"
+      Position		      [1555, 732, 1640, 758]
+      ZOrder		      -89
+      ShowName		      off
+      GotoTag		      "Throttle"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From20"
+      SID		      "891"
+      Position		      [565, 659, 665, 681]
+      ZOrder		      213
+      ShowName		      off
+      GotoTag		      "Wheel_FR_Valid"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From21"
+      SID		      "892"
+      Position		      [565, 634, 665, 656]
+      ZOrder		      214
+      ShowName		      off
+      GotoTag		      "Wheel_FL_Valid"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From22"
+      SID		      "893"
+      Position		      [565, 709, 665, 731]
+      ZOrder		      215
+      ShowName		      off
+      GotoTag		      "Wheel_RR_Valid"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From23"
+      SID		      "894"
+      Position		      [565, 684, 665, 706]
+      ZOrder		      216
+      ShowName		      off
+      GotoTag		      "Wheel_RL_Valid"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From24"
+      SID		      "728"
+      Position		      [2085, 977, 2170, 1003]
+      ZOrder		      -94
+      ShowName		      off
+      GotoTag		      "Position"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From25"
+      SID		      "742"
+      Position		      [2185, 482, 2270, 508]
+      ZOrder		      -95
+      ShowName		      off
+      GotoTag		      "Velocity"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From26"
+      SID		      "743"
+      Position		      [2080, 422, 2165, 448]
+      ZOrder		      -96
+      ShowName		      off
+      GotoTag		      "Orientation"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From27"
+      SID		      "756"
+      Position		      [2190, 1067, 2275, 1093]
+      ZOrder		      -97
+      ShowName		      off
+      GotoTag		      "Velocity"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From28"
+      SID		      "757"
+      Position		      [2085, 1007, 2170, 1033]
+      ZOrder		      -98
+      ShowName		      off
+      GotoTag		      "Orientation"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From29"
+      SID		      "919"
+      Position		      [760, 492, 845, 518]
+      ZOrder		      241
+      ShowName		      off
+      GotoTag		      "Steering"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      SID		      "87"
+      Position		      [1555, 802, 1640, 828]
+      ZOrder		      -100
+      ShowName		      off
+      GotoTag		      "Steering"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From30"
+      SID		      "920"
+      Position		      [760, 612, 845, 638]
+      ZOrder		      240
+      ShowName		      off
+      GotoTag		      "Brake"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From31"
+      SID		      "921"
+      Position		      [760, 312, 845, 338]
+      ZOrder		      243
+      ShowName		      off
+      GotoTag		      "ResetPos"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From32"
+      SID		      "922"
+      Position		      [760, 432, 845, 458]
+      ZOrder		      244
+      ShowName		      off
+      GotoTag		      "InitialPos"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From33"
+      SID		      "923"
+      Position		      [760, 372, 845, 398]
+      ZOrder		      245
+      ShowName		      off
+      GotoTag		      "InitialOri"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From34"
+      SID		      "928"
+      Position		      [2190, 1337, 2275, 1363]
+      ZOrder		      250
+      ShowName		      off
+      GotoTag		      "Wheel_V"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From35"
+      SID		      "955"
+      Position		      [1555, 592, 1640, 618]
+      ZOrder		      276
+      ShowName		      off
+      GotoTag		      "Acceleration"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From36"
+      SID		      "835"
+      Position		      [2185, 752, 2270, 778]
+      ZOrder		      -107
+      ShowName		      off
+      GotoTag		      "Wheel_V"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From38"
+      SID		      "843"
+      Position		      [2185, 602, 2270, 628]
+      ZOrder		      -109
+      ShowName		      off
+      GotoTag		      "Throttle"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From39"
+      SID		      "844"
+      Position		      [2080, 632, 2165, 658]
+      ZOrder		      -110
+      ShowName		      off
+      GotoTag		      "Brake"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From4"
+      SID		      "88"
+      Position		      [1555, 452, 1640, 478]
+      ZOrder		      -111
+      ShowName		      off
+      GotoTag		      "Position"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From40"
+      SID		      "845"
+      Position		      [2185, 662, 2270, 688]
+      ZOrder		      -112
+      ShowName		      off
+      GotoTag		      "Steering"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From41"
+      SID		      "846"
+      Position		      [2190, 1187, 2275, 1213]
+      ZOrder		      -113
+      ShowName		      off
+      GotoTag		      "Throttle"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From42"
+      SID		      "847"
+      Position		      [2085, 1217, 2170, 1243]
+      ZOrder		      -114
+      ShowName		      off
+      GotoTag		      "Brake"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From43"
+      SID		      "848"
+      Position		      [2190, 1247, 2275, 1273]
+      ZOrder		      -115
+      ShowName		      off
+      GotoTag		      "Steering"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From5"
+      SID		      "896"
+      Position		      [715, 694, 815, 716]
+      ZOrder		      218
+      ShowName		      off
+      GotoTag		      "Wheel_FL_H"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      SID		      "897"
+      Position		      [715, 769, 815, 791]
+      ZOrder		      219
+      ShowName		      off
+      GotoTag		      "Wheel_RR_H"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From7"
+      SID		      "91"
+      Position		      [1555, 487, 1640, 513]
+      ZOrder		      -118
+      ShowName		      off
+      GotoTag		      "Orientation"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From8"
+      SID		      "99"
+      Position		      [1555, 767, 1640, 793]
+      ZOrder		      -119
+      ShowName		      off
+      GotoTag		      "Brake"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From9"
+      SID		      "898"
+      Position		      [715, 744, 815, 766]
+      ZOrder		      220
+      ShowName		      off
+      GotoTag		      "Wheel_RL_H"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      SID		      "387"
+      Position		      [1720, 834, 1760, 866]
+      ZOrder		      -122
+      ShowName		      off
+      Gain		      "50"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto1"
+      SID		      "883"
+      Position		      [1320, 599, 1430, 621]
+      ZOrder		      204
+      ShowName		      off
+      GotoTag		      "Wheel_FL_Pos"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto10"
+      SID		      "300"
+      Position		      [245, 422, 330, 448]
+      ZOrder		      -125
+      ShowName		      off
+      GotoTag		      "InitialPos"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto11"
+      SID		      "884"
+      Position		      [1320, 649, 1430, 671]
+      ZOrder		      206
+      ShowName		      off
+      GotoTag		      "Wheel_RL_Pos"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto12"
+      SID		      "885"
+      Position		      [1320, 674, 1430, 696]
+      ZOrder		      207
+      ShowName		      off
+      GotoTag		      "Wheel_RR_Pos"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto13"
+      SID		      "886"
+      Position		      [1165, 704, 1275, 726]
+      ZOrder		      209
+      ShowName		      off
+      GotoTag		      "Wheel_FL_V"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto14"
+      SID		      "887"
+      Position		      [1165, 754, 1275, 776]
+      ZOrder		      211
+      ShowName		      off
+      GotoTag		      "Wheel_RL_V"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto15"
+      SID		      "888"
+      Position		      [1165, 779, 1275, 801]
+      ZOrder		      212
+      ShowName		      off
+      GotoTag		      "Wheel_RR_V"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto16"
+      SID		      "889"
+      Position		      [1165, 729, 1275, 751]
+      ZOrder		      210
+      ShowName		      off
+      GotoTag		      "Wheel_FR_V"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto17"
+      SID		      "901"
+      Position		      [250, 994, 375, 1016]
+      ZOrder		      223
+      ShowName		      off
+      GotoTag		      "Wheel_FL_Valid"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto18"
+      SID		      "902"
+      Position		      [250, 1319, 360, 1341]
+      ZOrder		      224
+      ShowName		      off
+      GotoTag		      "Wheel_RL_Valid"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto19"
+      SID		      "905"
+      Position		      [615, 1319, 725, 1341]
+      ZOrder		      228
+      ShowName		      off
+      GotoTag		      "Wheel_RR_Valid"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      SID		      "94"
+      Position		      [250, 582, 335, 608]
+      ZOrder		      -127
+      ShowName		      off
+      GotoTag		      "Throttle"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto20"
+      SID		      "906"
+      Position		      [615, 994, 725, 1016]
+      ZOrder		      227
+      ShowName		      off
+      GotoTag		      "Wheel_FR_Valid"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto21"
+      SID		      "903"
+      Position		      [250, 1064, 375, 1086]
+      ZOrder		      225
+      ShowName		      off
+      GotoTag		      "Wheel_FL_H"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto22"
+      SID		      "904"
+      Position		      [250, 1389, 360, 1411]
+      ZOrder		      226
+      ShowName		      off
+      GotoTag		      "Wheel_RL_H"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto23"
+      SID		      "907"
+      Position		      [615, 1389, 725, 1411]
+      ZOrder		      230
+      ShowName		      off
+      GotoTag		      "Wheel_RR_H"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto24"
+      SID		      "908"
+      Position		      [615, 1064, 725, 1086]
+      ZOrder		      229
+      ShowName		      off
+      GotoTag		      "Wheel_FR_H"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto25"
+      SID		      "926"
+      Position		      [1130, 487, 1215, 513]
+      ZOrder		      248
+      ShowName		      off
+      GotoTag		      "Velocity"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto26"
+      SID		      "927"
+      Position		      [1165, 829, 1275, 851]
+      ZOrder		      249
+      ShowName		      off
+      GotoTag		      "Wheel_V"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto27"
+      SID		      "954"
+      Position		      [1130, 562, 1215, 588]
+      ZOrder		      275
+      ShowName		      off
+      GotoTag		      "Acceleration"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto3"
+      SID		      "95"
+      Position		      [250, 552, 335, 578]
+      ZOrder		      -128
+      ShowName		      off
+      GotoTag		      "Steering"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto4"
+      SID		      "890"
+      Position		      [1320, 624, 1430, 646]
+      ZOrder		      205
+      ShowName		      off
+      GotoTag		      "Wheel_FR_Pos"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto5"
+      SID		      "917"
+      Position		      [245, 452, 330, 478]
+      ZOrder		      239
+      ShowName		      off
+      GotoTag		      "InitialOri"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto6"
+      SID		      "924"
+      Position		      [1130, 337, 1215, 363]
+      ZOrder		      246
+      ShowName		      off
+      GotoTag		      "Position"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto7"
+      SID		      "100"
+      Position		      [250, 642, 335, 668]
+      ZOrder		      -132
+      ShowName		      off
+      GotoTag		      "Brake"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto8"
+      SID		      "925"
+      Position		      [1130, 412, 1215, 438]
+      ZOrder		      247
+      ShowName		      off
+      GotoTag		      "Orientation"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto9"
+      SID		      "297"
+      Position		      [245, 392, 330, 418]
+      ZOrder		      -134
+      ShowName		      off
+      GotoTag		      "ResetPos"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground"
+      SID		      "711"
+      Position		      [2280, 545, 2300, 565]
+      ZOrder		      -135
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground1"
+      SID		      "397"
+      Position		      [1720, 875, 1740, 895]
+      ZOrder		      -136
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground10"
+      SID		      "141"
+      Position		      [1720, 700, 1740, 720]
+      ZOrder		      -137
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground11"
+      SID		      "142"
+      Position		      [1720, 560, 1740, 580]
+      ZOrder		      -138
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground12"
+      SID		      "423"
+      Position		      [1410, 1230, 1430, 1250]
+      ZOrder		      -139
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground13"
+      SID		      "424"
+      Position		      [1410, 1020, 1430, 1040]
+      ZOrder		      -140
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground14"
+      SID		      "452"
+      Position		      [1735, 1025, 1755, 1045]
+      ZOrder		      -141
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground15"
+      SID		      "453"
+      Position		      [1735, 1055, 1755, 1075]
+      ZOrder		      -142
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground16"
+      SID		      "454"
+      Position		      [1735, 1085, 1755, 1105]
+      ZOrder		      -143
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground17"
+      SID		      "455"
+      Position		      [1735, 1115, 1755, 1135]
+      ZOrder		      -144
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground19"
+      SID		      "457"
+      Position		      [1735, 1175, 1755, 1195]
+      ZOrder		      -145
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground2"
+      SID		      "417"
+      Position		      [1410, 1050, 1430, 1070]
+      ZOrder		      -146
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground20"
+      SID		      "458"
+      Position		      [1735, 1205, 1755, 1225]
+      ZOrder		      -147
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground21"
+      SID		      "459"
+      Position		      [1735, 1235, 1755, 1255]
+      ZOrder		      -148
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground22"
+      SID		      "488"
+      Position		      [1410, 1360, 1430, 1380]
+      ZOrder		      -149
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground23"
+      SID		      "489"
+      Position		      [1410, 1390, 1430, 1410]
+      ZOrder		      -150
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground24"
+      SID		      "523"
+      Position		      [1735, 1360, 1755, 1380]
+      ZOrder		      -151
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground25"
+      SID		      "524"
+      Position		      [1735, 1390, 1755, 1410]
+      ZOrder		      -152
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground26"
+      SID		      "525"
+      Position		      [1735, 1420, 1755, 1440]
+      ZOrder		      -153
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground27"
+      SID		      "526"
+      Position		      [1735, 1450, 1755, 1470]
+      ZOrder		      -154
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground29"
+      SID		      "528"
+      Position		      [1735, 1510, 1755, 1530]
+      ZOrder		      -155
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground3"
+      SID		      "418"
+      Position		      [1410, 1080, 1430, 1100]
+      ZOrder		      -156
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground30"
+      SID		      "490"
+      Position		      [1410, 1420, 1430, 1440]
+      ZOrder		      -157
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground31"
+      SID		      "491"
+      Position		      [1410, 1450, 1430, 1470]
+      ZOrder		      -158
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground33"
+      SID		      "493"
+      Position		      [1410, 1510, 1430, 1530]
+      ZOrder		      -159
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground34"
+      SID		      "494"
+      Position		      [1410, 1540, 1430, 1560]
+      ZOrder		      -160
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground35"
+      SID		      "495"
+      Position		      [1410, 1570, 1430, 1590]
+      ZOrder		      -161
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground36"
+      SID		      "529"
+      Position		      [1735, 1540, 1755, 1560]
+      ZOrder		      -162
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground37"
+      SID		      "530"
+      Position		      [1735, 1570, 1755, 1590]
+      ZOrder		      -163
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground38"
+      SID		      "714"
+      Position		      [2280, 575, 2300, 595]
+      ZOrder		      -164
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground4"
+      SID		      "419"
+      Position		      [1410, 1110, 1430, 1130]
+      ZOrder		      -165
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground43"
+      SID		      "745"
+      Position		      [2280, 1130, 2300, 1150]
+      ZOrder		      -167
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground44"
+      SID		      "769"
+      Position		      [2280, 455, 2300, 475]
+      ZOrder		      -168
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground45"
+      SID		      "746"
+      Position		      [2280, 1160, 2300, 1180]
+      ZOrder		      -169
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground46"
+      SID		      "722"
+      Position		      [2280, 515, 2300, 535]
+      ZOrder		      -170
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground47"
+      SID		      "723"
+      Position		      [2280, 725, 2300, 745]
+      ZOrder		      -171
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground49"
+      SID		      "725"
+      Position		      [2280, 785, 2300, 805]
+      ZOrder		      -172
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground5"
+      SID		      "854"
+      Position		      [1720, 665, 1740, 685]
+      ZOrder		      -173
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground54"
+      SID		      "751"
+      Position		      [2280, 1100, 2300, 1120]
+      ZOrder		      -175
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground55"
+      SID		      "752"
+      Position		      [2280, 1310, 2300, 1330]
+      ZOrder		      -176
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground57"
+      SID		      "754"
+      Position		      [2280, 1370, 2300, 1390]
+      ZOrder		      -177
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground58"
+      SID		      "770"
+      Position		      [2280, 1040, 2300, 1060]
+      ZOrder		      -178
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground59"
+      SID		      "771"
+      Position		      [2280, 815, 2300, 835]
+      ZOrder		      -179
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground6"
+      SID		      "421"
+      Position		      [1410, 1170, 1430, 1190]
+      ZOrder		      -180
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground60"
+      SID		      "772"
+      Position		      [2280, 1400, 2300, 1420]
+      ZOrder		      -181
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground7"
+      SID		      "422"
+      Position		      [1410, 1200, 1430, 1220]
+      ZOrder		      -182
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground9"
+      SID		      "140"
+      Position		      [1720, 630, 1740, 650]
+      ZOrder		      -184
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      "899"
+      Ports		      [4, 1]
+      Position		      [840, 691, 845, 794]
+      ZOrder		      221
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      SID		      "900"
+      Ports		      [4, 1]
+      Position		      [690, 628, 695, 737]
+      ZOrder		      222
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Physics Visualisation"
+      SID		      "861"
+      Ports		      [14]
+      Position		      [1770, 393, 1965, 922]
+      ZOrder		      15
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Physics Visualisation"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      PAR_SKIP_INTERNAL_PHYSICS	off
+      PAR_ACCEL_VALID	      on
+      PAR_ROT_ACCEL_VALID     off
+      PAR_GEAR_VALID	      off
+      PAR_RPM_VALID	      on
+      PAR_INPUTS_VALID	      on
+      PAR_STEER_TORQUE_VALID  on
+      PAR_HEADLIGHTS_ON_VALID off
+      PAR_WHEEL_POS_VALID     on
+      PAR_WHEEL_ORI_VALID     off
+      PAR_TYRE_PARAMS_VALID   off
+      PAR_WHEEL_ROTATION_VALID on
+      PAR_WHEEL_BRAKE_TEMP_VALID off
+      PAR_WHEEL_TREAD_TEMP_VALID off
+      PAR_WHEEL_AIR_TEMP_VALID off
+      period		      "-1"
+      offset		      "0"
+      useReverseByteOrder     on
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Simple Vehicle Model"
+      SID		      "880"
+      Ports		      [8, 6]
+      Position		      [880, 302, 1100, 768]
+      ZOrder		      202
+      LibraryVersion	      "1.1051"
+      FontSize		      12
+      SourceBlock	      "rFproPhysicsLib/Internal Utility/Simple Vehicle Model"
+      SourceType	      "rFpro Simple Vehicle Model"
+      ContentPreviewEnabled   off
+      TIMESTEP		      "0.001"
+      gCGHeight		      "0.5"
+      gLeftWheelBase	      "2.626"
+      gRightWheelBase	      "2.626"
+      gFrontTrack	      "1.55"
+      gRearTrack	      "1.525"
+      gFrontWheelRadius	      "0.32"
+      gRearWheelRadius	      "0.33"
+      gWheelDeflection	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Starting Vehicle Location"
+      SID		      "1"
+      Ports		      [0, 3]
+      Position		      [25, 386, 210, 484]
+      ZOrder		      -204
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Starting Vehicle Location"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      cg_offset		      "CG_OFFSET_FROM_NOSE"
+      numPackets	      "1"
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      SID		      "104"
+      Position		      [250, 615, 270, 635]
+      ZOrder		      -211
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator1"
+      SID		      "105"
+      Position		      [250, 675, 270, 695]
+      ZOrder		      -212
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator10"
+      SID		      "930"
+      Position		      [250, 1135, 270, 1155]
+      ZOrder		      254
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator11"
+      SID		      "931"
+      Position		      [250, 1170, 270, 1190]
+      ZOrder		      253
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator12"
+      SID		      "932"
+      Position		      [250, 1205, 270, 1225]
+      ZOrder		      252
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator13"
+      SID		      "933"
+      Position		      [250, 1240, 270, 1260]
+      ZOrder		      251
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator14"
+      SID		      "934"
+      Position		      [250, 1030, 270, 1050]
+      ZOrder		      256
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator15"
+      SID		      "935"
+      Position		      [615, 1135, 635, 1155]
+      ZOrder		      260
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator16"
+      SID		      "936"
+      Position		      [615, 1170, 635, 1190]
+      ZOrder		      259
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator17"
+      SID		      "937"
+      Position		      [615, 1205, 635, 1225]
+      ZOrder		      258
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator18"
+      SID		      "938"
+      Position		      [615, 1240, 635, 1260]
+      ZOrder		      257
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator19"
+      SID		      "939"
+      Position		      [615, 1030, 635, 1050]
+      ZOrder		      262
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator2"
+      SID		      "106"
+      Position		      [250, 705, 270, 725]
+      ZOrder		      -213
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator20"
+      SID		      "940"
+      Position		      [615, 1100, 635, 1120]
+      ZOrder		      261
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator21"
+      SID		      "941"
+      Position		      [615, 1460, 635, 1480]
+      ZOrder		      266
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator22"
+      SID		      "942"
+      Position		      [615, 1495, 635, 1515]
+      ZOrder		      265
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator23"
+      SID		      "943"
+      Position		      [615, 1530, 635, 1550]
+      ZOrder		      264
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator24"
+      SID		      "944"
+      Position		      [615, 1565, 635, 1585]
+      ZOrder		      263
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator25"
+      SID		      "945"
+      Position		      [615, 1355, 635, 1375]
+      ZOrder		      268
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator26"
+      SID		      "946"
+      Position		      [615, 1425, 635, 1445]
+      ZOrder		      267
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator27"
+      SID		      "947"
+      Position		      [250, 1460, 270, 1480]
+      ZOrder		      272
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator28"
+      SID		      "948"
+      Position		      [250, 1495, 270, 1515]
+      ZOrder		      271
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator29"
+      SID		      "949"
+      Position		      [250, 1530, 270, 1550]
+      ZOrder		      270
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator3"
+      SID		      "107"
+      Position		      [250, 735, 270, 755]
+      ZOrder		      -214
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator30"
+      SID		      "950"
+      Position		      [250, 1565, 270, 1585]
+      ZOrder		      269
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator31"
+      SID		      "951"
+      Position		      [250, 1355, 270, 1375]
+      ZOrder		      274
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator32"
+      SID		      "952"
+      Position		      [250, 1425, 270, 1445]
+      ZOrder		      273
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator4"
+      SID		      "108"
+      Position		      [250, 765, 270, 785]
+      ZOrder		      -215
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator5"
+      SID		      "109"
+      Position		      [250, 795, 270, 815]
+      ZOrder		      -216
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator6"
+      SID		      "110"
+      Position		      [250, 825, 270, 845]
+      ZOrder		      -217
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator7"
+      SID		      "111"
+      Position		      [250, 855, 270, 875]
+      ZOrder		      -218
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator8"
+      SID		      "112"
+      Position		      [250, 885, 270, 905]
+      ZOrder		      -219
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator9"
+      SID		      "929"
+      Position		      [250, 1100, 270, 1120]
+      ZOrder		      255
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Tyre Contact V02"
+      SID		      "876"
+      Ports		      [0, 8]
+      Position		      [25, 984, 210, 1271]
+      ZOrder		      30
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Tyre Contact"
+      SourceType	      "rFpro Library block"
+      LabelModeActiveChoice   "rFproLib_RemoteModel"
+      ContentPreviewEnabled   off
+      wheel		      "FL"
+      contact		      "[]"
+      radius		      "0.32"
+      width		      "0.25"
+      sampleTime	      "-1"
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Tyre Contact V1"
+      SID		      "877"
+      Ports		      [0, 8]
+      Position		      [390, 984, 575, 1271]
+      ZOrder		      31
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Tyre Contact"
+      SourceType	      "rFpro Library block"
+      LabelModeActiveChoice   "rFproLib_RemoteModel"
+      ContentPreviewEnabled   off
+      wheel		      "FR"
+      contact		      "[]"
+      radius		      "0.32"
+      width		      "0.25"
+      sampleTime	      "-1"
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Tyre Contact V2"
+      SID		      "878"
+      Ports		      [0, 8]
+      Position		      [25, 1309, 210, 1596]
+      ZOrder		      32
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Tyre Contact"
+      SourceType	      "rFpro Library block"
+      LabelModeActiveChoice   "rFproLib_RemoteModel"
+      ContentPreviewEnabled   off
+      wheel		      "RL"
+      contact		      "[]"
+      radius		      "0.33"
+      width		      "0.25"
+      sampleTime	      "-1"
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Tyre Contact V3"
+      SID		      "879"
+      Ports		      [0, 8]
+      Position		      [390, 1309, 575, 1596]
+      ZOrder		      33
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Tyre Contact"
+      SourceType	      "rFpro Library block"
+      LabelModeActiveChoice   "rFproLib_RemoteModel"
+      ContentPreviewEnabled   off
+      wheel		      "RR"
+      contact		      "[]"
+      radius		      "0.33"
+      width		      "0.25"
+      sampleTime	      "-1"
+      rFpro__platform	      "Remote Model - Default"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Wheel Visualisation FL"
+      SID		      "869"
+      Ports		      [9]
+      Position		      [1455, 980, 1635, 1260]
+      ZOrder		      23
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Wheel Visualisation"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      wheelStr		      "FL"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Wheel Visualisation FR"
+      SID		      "870"
+      Ports		      [9]
+      Position		      [1775, 985, 1955, 1265]
+      ZOrder		      24
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Wheel Visualisation"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      wheelStr		      "FR"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Wheel Visualisation RL"
+      SID		      "871"
+      Ports		      [9]
+      Position		      [1455, 1321, 1635, 1599]
+      ZOrder		      25
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Wheel Visualisation"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      wheelStr		      "RL"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Wheel Visualisation RR"
+      SID		      "872"
+      Ports		      [9]
+      Position		      [1775, 1322, 1955, 1598]
+      ZOrder		      26
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/Wheel Visualisation"
+      SourceType	      "rFpro Remote Physics Interface"
+      ContentPreviewEnabled   off
+      wheelStr		      "RR"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "rFpro Setup"
+      SID		      "874"
+      Ports		      []
+      Position		      [30, 237, 210, 338]
+      ZOrder		      28
+      LibraryVersion	      "1.1051"
+      SourceBlock	      "rFproPhysicsLib/rFpro Setup"
+      SourceType	      "rFpro Remote Physics Block"
+      ContentPreviewEnabled   off
+      platform		      "Remote Model - Default"
+      stopOnSessionEnd	      on
+      usePseudoRealtime	      on
+      syncToRF		      on
+      useReverseByteOrder     off
+      useRfTime		      on
+      minIterations	      "4"
+      maxIterations	      "1000"
+      ipReceiveAddress	      "'127.0.0.1'"
+      ipReceivePort	      "11054"
+      receiveSampleTime	      "-1"
+      ipTransmitAddress	      "'127.0.0.1'"
+      ipTransmitPort	      "11052"
+      transmitSampleTime      "-1"
+      pluginType	      "RUN_PHYSICS"
+      sysTarget		      "xpctarget.tlc"
+      templateMakeFile	      "xpc_default_tmf"
+      makeCommand	      "make_rtw"
+      buildDesc		      "xPC target"
+    }
+    Line {
+      ZOrder		      8
+      SrcBlock		      "Starting Vehicle Location"
+      SrcPort		      2
+      DstBlock		      "Goto10"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      35
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      40
+      SrcBlock		      "From7"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      41
+      SrcBlock		      "From"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      42
+      SrcBlock		      "From2"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      10
+    }
+    Line {
+      ZOrder		      43
+      SrcBlock		      "From3"
+      SrcPort		      1
+      Points		      [4, 0]
+      Branch {
+	ZOrder			1003
+	Points			[0, 35]
+	DstBlock		"Dead Zone"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1002
+	DstBlock		"Physics Visualisation"
+	DstPort			12
+      }
+    }
+    Line {
+      ZOrder		      46
+      SrcBlock		      "From8"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      11
+    }
+    Line {
+      ZOrder		      47
+      SrcBlock		      "Driver Input"
+      SrcPort		      1
+      DstBlock		      "Goto3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      51
+      SrcBlock		      "Driver Input"
+      SrcPort		      2
+      DstBlock		      "Goto2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      55
+      SrcBlock		      "Driver Input"
+      SrcPort		      4
+      DstBlock		      "Goto7"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      59
+      SrcBlock		      "From4"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      60
+      SrcBlock		      "Driver Input"
+      SrcPort		      3
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      61
+      SrcBlock		      "Driver Input"
+      SrcPort		      5
+      DstBlock		      "Terminator1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      62
+      SrcBlock		      "Driver Input"
+      SrcPort		      6
+      DstBlock		      "Terminator2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      63
+      SrcBlock		      "Driver Input"
+      SrcPort		      7
+      DstBlock		      "Terminator3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      64
+      SrcBlock		      "Driver Input"
+      SrcPort		      8
+      DstBlock		      "Terminator4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      65
+      SrcBlock		      "Driver Input"
+      SrcPort		      9
+      DstBlock		      "Terminator5"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      66
+      SrcBlock		      "Driver Input"
+      SrcPort		      10
+      DstBlock		      "Terminator6"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      67
+      SrcBlock		      "Driver Input"
+      SrcPort		      11
+      DstBlock		      "Terminator7"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      68
+      SrcBlock		      "Driver Input"
+      SrcPort		      12
+      DstBlock		      "Terminator8"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      852
+      SrcBlock		      "From35"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      71
+      SrcBlock		      "Ground9"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      72
+      SrcBlock		      "Ground10"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      73
+      SrcBlock		      "Ground11"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      91
+      SrcBlock		      "Starting Vehicle Location"
+      SrcPort		      1
+      DstBlock		      "Goto9"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      97
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      13
+    }
+    Line {
+      ZOrder		      101
+      SrcBlock		      "Ground1"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      14
+    }
+    Line {
+      ZOrder		      550
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      4
+      DstBlock		      "Terminator9"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      547
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      5
+      DstBlock		      "Terminator10"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      546
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      6
+      DstBlock		      "Terminator11"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      110
+      SrcBlock		      "Ground2"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      111
+      SrcBlock		      "Ground3"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      112
+      SrcBlock		      "Ground4"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      120
+      SrcBlock		      "Ground6"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      121
+      SrcBlock		      "Ground7"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      122
+      SrcBlock		      "Ground12"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      126
+      SrcBlock		      "Ground13"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      548
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      7
+      DstBlock		      "Terminator12"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      551
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      2
+      DstBlock		      "Terminator14"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      549
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      8
+      DstBlock		      "Terminator13"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      135
+      SrcBlock		      "Ground14"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      136
+      SrcBlock		      "Ground15"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      137
+      SrcBlock		      "Ground16"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      138
+      SrcBlock		      "Ground17"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      139
+      SrcBlock		      "Ground19"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      140
+      SrcBlock		      "Ground20"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      141
+      SrcBlock		      "Ground21"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      556
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      5
+      DstBlock		      "Terminator15"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      555
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      6
+      DstBlock		      "Terminator16"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      552
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      2
+      DstBlock		      "Terminator19"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      554
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      8
+      DstBlock		      "Terminator18"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      161
+      SrcBlock		      "Ground22"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      162
+      SrcBlock		      "Ground23"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      163
+      SrcBlock		      "Ground30"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      164
+      SrcBlock		      "Ground31"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      165
+      SrcBlock		      "Ground33"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      166
+      SrcBlock		      "Ground34"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      167
+      SrcBlock		      "Ground35"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      543
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      4
+      DstBlock		      "Terminator32"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      541
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      5
+      DstBlock		      "Terminator27"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      545
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      6
+      DstBlock		      "Terminator28"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      544
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      7
+      DstBlock		      "Terminator29"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      540
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      2
+      DstBlock		      "Terminator31"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      542
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      8
+      DstBlock		      "Terminator30"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      187
+      SrcBlock		      "Ground24"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      188
+      SrcBlock		      "Ground25"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      189
+      SrcBlock		      "Ground26"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      190
+      SrcBlock		      "Ground27"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      191
+      SrcBlock		      "Ground29"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      192
+      SrcBlock		      "Ground36"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      193
+      SrcBlock		      "Ground37"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      9
+    }
+    Line {
+      ZOrder		      560
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      4
+      DstBlock		      "Terminator26"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      561
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      5
+      DstBlock		      "Terminator21"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      563
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      6
+      DstBlock		      "Terminator22"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      562
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      7
+      DstBlock		      "Terminator23"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      558
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      2
+      DstBlock		      "Terminator25"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      559
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      8
+      DstBlock		      "Terminator24"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      213
+      SrcBlock		      "From19"
+      SrcPort		      1
+      DstBlock		      "Bias1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      214
+      SrcBlock		      "Bias1"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      215
+      SrcBlock		      "Ground"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      216
+      SrcBlock		      "Ground38"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      217
+      SrcBlock		      "From38"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      218
+      SrcBlock		      "From39"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	ZOrder			1000
+	DstBlock		"Compare\nTo Constant"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			994
+	DstBlock		"Additional Vehicle 1"
+	DstPort			9
+      }
+    }
+    Line {
+      ZOrder		      219
+      SrcBlock		      "From40"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      10
+    }
+    Line {
+      ZOrder		      220
+      SrcBlock		      "From26"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      221
+      SrcBlock		      "From25"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      222
+      SrcBlock		      "Ground46"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      223
+      SrcBlock		      "Ground47"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      12
+    }
+    Line {
+      ZOrder		      538
+      SrcBlock		      "From36"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      13
+    }
+    Line {
+      ZOrder		      225
+      SrcBlock		      "Ground49"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      14
+    }
+    Line {
+      ZOrder		      227
+      SrcBlock		      "Ground44"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      228
+      SrcBlock		      "Ground59"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      15
+    }
+    Line {
+      ZOrder		      262
+      SrcBlock		      "Ground5"
+      SrcPort		      1
+      DstBlock		      "Physics Visualisation"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      263
+      SrcBlock		      "From24"
+      SrcPort		      1
+      DstBlock		      "Bias2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      264
+      SrcBlock		      "Bias2"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      265
+      SrcBlock		      "Ground43"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      266
+      SrcBlock		      "Ground45"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      267
+      SrcBlock		      "From41"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      268
+      SrcBlock		      "From42"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	ZOrder			999
+	DstBlock		"Compare\nTo Constant1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			998
+	DstBlock		"Additional Vehicle 2"
+	DstPort			9
+      }
+    }
+    Line {
+      ZOrder		      269
+      SrcBlock		      "From43"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      10
+    }
+    Line {
+      ZOrder		      271
+      SrcBlock		      "Ground54"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      272
+      SrcBlock		      "Ground55"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      12
+    }
+    Line {
+      ZOrder		      539
+      SrcBlock		      "From34"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      13
+    }
+    Line {
+      ZOrder		      274
+      SrcBlock		      "Ground57"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      14
+    }
+    Line {
+      ZOrder		      275
+      SrcBlock		      "From28"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      276
+      SrcBlock		      "From27"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      277
+      SrcBlock		      "Ground58"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      278
+      SrcBlock		      "Ground60"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      15
+    }
+    Line {
+      ZOrder		      849
+      SrcBlock		      "Simple Vehicle Model"
+      SrcPort		      5
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      485
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      DstBlock		      "Goto1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      486
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Goto4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      487
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      DstBlock		      "Goto11"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      488
+      SrcBlock		      "Demux"
+      SrcPort		      4
+      DstBlock		      "Goto12"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      489
+      SrcBlock		      "Demux1"
+      SrcPort		      1
+      DstBlock		      "Goto13"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      490
+      SrcBlock		      "Demux1"
+      SrcPort		      2
+      DstBlock		      "Goto16"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      491
+      SrcBlock		      "Demux1"
+      SrcPort		      3
+      DstBlock		      "Goto14"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      492
+      SrcBlock		      "Demux1"
+      SrcPort		      4
+      DstBlock		      "Goto15"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      848
+      SrcBlock		      "Simple Vehicle Model"
+      SrcPort		      6
+      Points		      [14, 0; 0, 30]
+      Branch {
+	ZOrder			536
+	Points			[0, 85]
+	DstBlock		"Goto26"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			534
+	DstBlock		"Demux1"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      494
+      SrcBlock		      "From23"
+      SrcPort		      1
+      DstBlock		      "Mux2"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      495
+      SrcBlock		      "From22"
+      SrcPort		      1
+      DstBlock		      "Mux2"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      496
+      SrcBlock		      "From21"
+      SrcPort		      1
+      DstBlock		      "Mux2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      497
+      SrcBlock		      "From20"
+      SrcPort		      1
+      DstBlock		      "Mux2"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      498
+      SrcBlock		      "From1"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      499
+      SrcBlock		      "From5"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      500
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      501
+      SrcBlock		      "From9"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      504
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      7
+    }
+    Line {
+      ZOrder		      505
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      8
+    }
+    Line {
+      ZOrder		      508
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      1
+      DstBlock		      "Goto20"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      509
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      3
+      DstBlock		      "Goto24"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      510
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      1
+      DstBlock		      "Goto19"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      511
+      SrcBlock		      "Tyre Contact V3"
+      SrcPort		      3
+      DstBlock		      "Goto23"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      512
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      1
+      DstBlock		      "Goto18"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      513
+      SrcBlock		      "Tyre Contact V2"
+      SrcPort		      3
+      DstBlock		      "Goto22"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      514
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      1
+      DstBlock		      "Goto17"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      515
+      SrcBlock		      "Tyre Contact V02"
+      SrcPort		      3
+      DstBlock		      "Goto21"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      516
+      SrcBlock		      "From14"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      517
+      SrcBlock		      "From13"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FR"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      518
+      SrcBlock		      "From12"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      519
+      SrcBlock		      "From10"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation FL"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      520
+      SrcBlock		      "From11"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      521
+      SrcBlock		      "From18"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RR"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      522
+      SrcBlock		      "From16"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      523
+      SrcBlock		      "From17"
+      SrcPort		      1
+      DstBlock		      "Wheel Visualisation RL"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      524
+      SrcBlock		      "Starting Vehicle Location"
+      SrcPort		      3
+      DstBlock		      "Goto5"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      525
+      SrcBlock		      "From29"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      526
+      SrcBlock		      "From15"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      527
+      SrcBlock		      "From30"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      528
+      SrcBlock		      "From31"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      529
+      SrcBlock		      "From32"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      530
+      SrcBlock		      "From33"
+      SrcPort		      1
+      DstBlock		      "Simple Vehicle Model"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      531
+      SrcBlock		      "Simple Vehicle Model"
+      SrcPort		      1
+      DstBlock		      "Goto6"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      532
+      SrcBlock		      "Simple Vehicle Model"
+      SrcPort		      2
+      DstBlock		      "Goto8"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      533
+      SrcBlock		      "Simple Vehicle Model"
+      SrcPort		      3
+      DstBlock		      "Goto25"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      553
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      4
+      DstBlock		      "Terminator20"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      557
+      SrcBlock		      "Tyre Contact V1"
+      SrcPort		      7
+      DstBlock		      "Terminator17"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      850
+      SrcBlock		      "Simple Vehicle Model"
+      SrcPort		      4
+      DstBlock		      "Goto27"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1004
+      SrcBlock		      "Dead Zone"
+      SrcPort		      1
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1007
+      SrcBlock		      "Compare\nTo Constant"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1008
+      SrcBlock		      "Compare\nTo Constant1"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1009
+      SrcBlock		      "Data Type Conversion"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 1"
+      DstPort		      11
+    }
+    Line {
+      ZOrder		      1010
+      SrcBlock		      "Data Type Conversion1"
+      SrcPort		      1
+      DstBlock		      "Additional Vehicle 2"
+      DstPort		      11
+    }
+    Annotation {
+      SID		      "963"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:14px; font-weight:600;\">NB</span><span style=\" font-size:14px;\">: Use Remot"
+      "eModelPlugin.ini settings:</span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; m"
+      "argin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14px;\"><br /></p>\n<p style=\""
+      " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><s"
+      "pan style=\" font-size:14px;\">[General]</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:"
+      "0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14px;\">RealTimeMode=True"
+      "</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:"
+      "0; text-indent:0px;\"><span style=\" font-size:14px;\">AdditionalVehicleTimeToLive = 1000</span></p></body></htm"
+      "l>"
+      Position		      [1554, 214, 1812, 296]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+    }
+    Annotation {
+      SID		      "856"
+      Name		      "Additional Vehicle Example"
+      Position		      [1142, 171, 1443, 201]
+      InternalMargins	      [0, 0, 0, 0]
+      ZOrder		      -1
+      FontName		      "Arial Black"
+      FontSize		      20
+    }
+    Annotation {
+      SID		      "857"
+      Name		      "Demonstrates the use of the Additional Vehicle block\nby adding 2 extra vehicles to the Simple vehi"
+      "cle example, \nthat flank the ego vehicle."
+      Position		      [1145, 214, 1506, 264]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      ZOrder		      -2
+      FontName		      "Arial"
+      FontSize		      14
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000014
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "ExampleAdditionalVehicle"
+    created		    "19-Aug-2013 12:25:22"
+    isLibrary		    0
+    sfVersion		    80000014
+    firstTarget		    2
+  }
+  target {
+    id			    2
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 3]
+  }
+  target {
+    id			    3
+    machine		    1
+    name		    "rtw"
+    linkNode		    [1 2 0]
+  }
+}
