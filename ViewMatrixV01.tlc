@@ -1,0 +1,44 @@
+%% Copyright (c) 2018 Kangaloosh Ltd t/a rFpro, All Rights Reserved.
+%%
+%% NOTICE:  All information contained herein is, and remains the property of rFpro. The intellectual and technical concepts contained
+%% herein are proprietary to rFpro and may be covered by U.S. and foreign patents, patents in process, and are protected by trade secret or copyright law.
+%% Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from rFpro.
+%%
+%% The copyright notice above does not evidence any actual or intended publication or disclosure of this source code, which includes information that is confidential
+%% and/or proprietary, and is a trade secret, of rFpro.  ANY REPRODUCTION, DISTRIBUTION, PUBLIC PERFORMANCE, OR PUBLIC DISPLAY OF THIS SOURCE CODE
+%% WITHOUT THE EXPRESS WRITTEN CONSENT OF RFPRO IS STRICTLY PROHIBITED, AND IN VIOLATION OF APPLICABLE LAWS AND INTERNATIONAL TREATIES.
+%% THE RECEIPT OR POSSESSION OF THIS SOURCE CODE AND/OR RELATED INFORMATION DOES NOT CONVEY OR IMPLY ANY RIGHTS TO REPRODUCE,
+%% DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING THAT IT MAY DESCRIBE, IN WHOLE OR IN PART.
+
+%implements ViewMatrixV01 "C"
+
+%function BlockTypeSetup(block, system) Output
+  %openfile externs
+    extern int overrideViewMatrix;
+    extern float overridenViewMatrix[4][4];
+  %closefile externs
+  %<LibCacheExtern(externs)>
+%endfunction
+
+%function Start(block, system) Output
+  overrideViewMatrix = 1;
+%endfunction
+
+%function Outputs(block, system) Output
+  overridenViewMatrix[0][0] = (float)%<LibBlockInputSignal(0, "", "", 0)>;
+  overridenViewMatrix[1][0] = (float)%<LibBlockInputSignal(0, "", "", 1)>;
+  overridenViewMatrix[2][0] = (float)%<LibBlockInputSignal(0, "", "", 2)>;
+  overridenViewMatrix[3][0] = (float)%<LibBlockInputSignal(0, "", "", 3)>;
+  overridenViewMatrix[0][1] = (float)%<LibBlockInputSignal(0, "", "", 4)>;
+  overridenViewMatrix[1][1] = (float)%<LibBlockInputSignal(0, "", "", 5)>;
+  overridenViewMatrix[2][1] = (float)%<LibBlockInputSignal(0, "", "", 6)>;
+  overridenViewMatrix[3][1] = (float)%<LibBlockInputSignal(0, "", "", 7)>;
+  overridenViewMatrix[0][2] = (float)%<LibBlockInputSignal(0, "", "", 8)>;
+  overridenViewMatrix[1][2] = (float)%<LibBlockInputSignal(0, "", "", 9)>;
+  overridenViewMatrix[2][2] = (float)%<LibBlockInputSignal(0, "", "", 10)>;
+  overridenViewMatrix[3][2] = (float)%<LibBlockInputSignal(0, "", "", 11)>;
+  overridenViewMatrix[0][3] = (float)%<LibBlockInputSignal(0, "", "", 12)>;
+  overridenViewMatrix[1][3] = (float)%<LibBlockInputSignal(0, "", "", 13)>;
+  overridenViewMatrix[2][3] = (float)%<LibBlockInputSignal(0, "", "", 14)>;
+  overridenViewMatrix[3][3] = (float)%<LibBlockInputSignal(0, "", "", 15)>;
+%endfunction

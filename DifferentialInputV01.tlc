@@ -1,0 +1,43 @@
+%% Copyright (c) 2011-2020 rFpro Limited, All Rights Reserved.
+%%
+%% NOTICE:  All information contained herein is, and remains the property of rFpro. The intellectual and technical concepts contained
+%% herein are proprietary to rFpro and may be covered by U.S. and foreign patents, patents in process, and are protected by trade secret or copyright law.
+%% Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from rFpro.
+%%
+%% The copyright notice above does not evidence any actual or intended publication or disclosure of this source code, which includes information that is confidential
+%% and/or proprietary, and is a trade secret, of rFpro.  ANY REPRODUCTION, DISTRIBUTION, PUBLIC PERFORMANCE, OR PUBLIC DISPLAY OF THIS SOURCE CODE
+%% WITHOUT THE EXPRESS WRITTEN CONSENT OF RFPRO IS STRICTLY PROHIBITED, AND IN VIOLATION OF APPLICABLE LAWS AND INTERNATIONAL TREATIES.
+%% THE RECEIPT OR POSSESSION OF THIS SOURCE CODE AND/OR RELATED INFORMATION DOES NOT CONVEY OR IMPLY ANY RIGHTS TO REPRODUCE,
+%% DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING THAT IT MAY DESCRIBE, IN WHOLE OR IN PART.
+
+%implements DifferentialInputV01 "C"
+
+%function BlockTypeSetup(block, system) Output
+  %<LibAddToCommonIncludes("InternalsPlugin.hpp")>
+  %openfile externs
+    extern DifferentialInputV01 simulinkDifferentialInput;
+  %closefile externs
+  %<LibCacheExtern(externs)>
+%endfunction
+
+%function Outputs(block, system) Output
+  %<LibBlockOutputSignal(  0, "", "", 0)> = simulinkDifferentialInput.mDT;
+  %<LibBlockOutputSignal(  1, "", "", 0)> = simulinkDifferentialInput.mET;
+
+  %<LibBlockOutputSignal(  2, "", "", 0)> = simulinkDifferentialInput.mEngineRPM;
+  %<LibBlockOutputSignal(  3, "", "", 0)> = simulinkDifferentialInput.mThrottle;
+  %<LibBlockOutputSignal(  4, "", "", 0)> = simulinkDifferentialInput.mGearRatio;
+
+  %<LibBlockOutputSignal(  5, "", "", 0)> = simulinkDifferentialInput.mFinalDriveInputRPM;
+  %<LibBlockOutputSignal(  6, "", "", 0)> = simulinkDifferentialInput.mLocalAccel[0];
+  %<LibBlockOutputSignal(  6, "", "", 1)> = simulinkDifferentialInput.mLocalAccel[1];
+  %<LibBlockOutputSignal(  6, "", "", 2)> = simulinkDifferentialInput.mLocalAccel[2];
+  %<LibBlockOutputSignal(  7, "", "", 0)> = simulinkDifferentialInput.mFinalDriveInputTorque;
+  %<LibBlockOutputSignal(  8, "", "", 0)> = simulinkDifferentialInput.mDifferentialWheelRPM;
+
+  %<LibBlockOutputSignal(  9, "", "", 0)> = simulinkDifferentialInput.mLapDistance;
+  %<LibBlockOutputSignal( 10, "", "", 0)> = simulinkDifferentialInput.mSteering;
+  %<LibBlockOutputSignal( 11, "", "", 0)> = simulinkDifferentialInput.mLocalRot[0];
+  %<LibBlockOutputSignal( 11, "", "", 1)> = simulinkDifferentialInput.mLocalRot[1];
+  %<LibBlockOutputSignal( 11, "", "", 2)> = simulinkDifferentialInput.mLocalRot[2];
+%endfunction
