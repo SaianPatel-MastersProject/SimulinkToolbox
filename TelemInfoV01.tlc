@@ -1,0 +1,120 @@
+%% Copyright (c) 2011-2019 Kangaloosh Ltd t/a rFpro, All Rights Reserved.
+%%
+%% NOTICE:  All information contained herein is, and remains the property of rFpro. The intellectual and technical concepts contained
+%% herein are proprietary to rFpro and may be covered by U.S. and foreign patents, patents in process, and are protected by trade secret or copyright law.
+%% Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from rFpro.
+%%
+%% The copyright notice above does not evidence any actual or intended publication or disclosure of this source code, which includes information that is confidential
+%% and/or proprietary, and is a trade secret, of rFpro.  ANY REPRODUCTION, DISTRIBUTION, PUBLIC PERFORMANCE, OR PUBLIC DISPLAY OF THIS SOURCE CODE
+%% WITHOUT THE EXPRESS WRITTEN CONSENT OF RFPRO IS STRICTLY PROHIBITED, AND IN VIOLATION OF APPLICABLE LAWS AND INTERNATIONAL TREATIES.
+%% THE RECEIPT OR POSSESSION OF THIS SOURCE CODE AND/OR RELATED INFORMATION DOES NOT CONVEY OR IMPLY ANY RIGHTS TO REPRODUCE,
+%% DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING THAT IT MAY DESCRIBE, IN WHOLE OR IN PART.
+
+%implements TelemInfoV01 "C"
+
+%function BlockTypeSetup(block, system) Output
+  %<LibAddToCommonIncludes("InternalsPlugin.hpp")>
+  %openfile externs
+    extern TelemInfoV01 simulinkInfo;;
+    extern bool wantsTelemetryUpdates;
+  %closefile externs
+  %<LibCacheExtern(externs)>
+%endfunction
+
+%function Start(block, system) Output
+  wantsTelemetryUpdates = true;
+%endfunction
+
+%function Outputs(block, system) Output
+  %<LibBlockOutputSignal(  0, "", "", 0)> = simulinkInfo.mDeltaTime;
+  %<LibBlockOutputSignal(  1, "", "", 0)> = simulinkInfo.mElapsedTime;
+  %<LibBlockOutputSignal(  2, "", "", 0)> = simulinkInfo.mLapNumber;
+  %<LibBlockOutputSignal(  3, "", "", 0)> = simulinkInfo.mLapStartET;
+  strncpy((char *)%<LibBlockOutputSignalAddr( 4, "", "", 0)>, simulinkInfo.mVehicleName, 64);
+  strncpy((char *)%<LibBlockOutputSignalAddr( 5, "", "", 0)>, simulinkInfo.mTrackName, 64);
+
+  %% Position and derivatives
+  %<LibBlockOutputSignal( 6, "", "", 0)> = simulinkInfo.mPos[0];
+  %<LibBlockOutputSignal( 6, "", "", 1)> = simulinkInfo.mPos[1];
+  %<LibBlockOutputSignal( 6, "", "", 2)> = simulinkInfo.mPos[2];
+  %<LibBlockOutputSignal( 7, "", "", 0)> = simulinkInfo.mLocalVel[0];
+  %<LibBlockOutputSignal( 7, "", "", 1)> = simulinkInfo.mLocalVel[1];
+  %<LibBlockOutputSignal( 7, "", "", 2)> = simulinkInfo.mLocalVel[2];
+  %<LibBlockOutputSignal( 8, "", "", 0)> = simulinkInfo.mLocalAccel[0];
+  %<LibBlockOutputSignal( 8, "", "", 1)> = simulinkInfo.mLocalAccel[1];
+  %<LibBlockOutputSignal( 8, "", "", 2)> = simulinkInfo.mLocalAccel[2];
+
+  %% Orientation and derivatives
+  %<LibBlockOutputSignal( 9, "", "", 0)> = simulinkInfo.mOri[0][0];
+  %<LibBlockOutputSignal( 9, "", "", 1)> = simulinkInfo.mOri[0][1];
+  %<LibBlockOutputSignal( 9, "", "", 2)> = simulinkInfo.mOri[0][2];
+  %<LibBlockOutputSignal( 9, "", "", 3)> = simulinkInfo.mOri[1][0];
+  %<LibBlockOutputSignal( 9, "", "", 4)> = simulinkInfo.mOri[1][1];
+  %<LibBlockOutputSignal( 9, "", "", 5)> = simulinkInfo.mOri[1][2];
+  %<LibBlockOutputSignal( 9, "", "", 6)> = simulinkInfo.mOri[2][0];
+  %<LibBlockOutputSignal( 9, "", "", 7)> = simulinkInfo.mOri[2][1];
+  %<LibBlockOutputSignal( 9, "", "", 8)> = simulinkInfo.mOri[2][2];
+  %<LibBlockOutputSignal( 10, "", "", 0)> = simulinkInfo.mLocalRot[0];
+  %<LibBlockOutputSignal( 10, "", "", 1)> = simulinkInfo.mLocalRot[1];
+  %<LibBlockOutputSignal( 10, "", "", 2)> = simulinkInfo.mLocalRot[2];
+  %<LibBlockOutputSignal( 11, "", "", 0)> = simulinkInfo.mLocalRotAccel[0];
+  %<LibBlockOutputSignal( 11, "", "", 1)> = simulinkInfo.mLocalRotAccel[1];
+  %<LibBlockOutputSignal( 11, "", "", 2)> = simulinkInfo.mLocalRotAccel[2];
+
+  %% Vehicle status
+  %<LibBlockOutputSignal( 12, "", "", 0)> = simulinkInfo.mGear;
+  %<LibBlockOutputSignal( 13, "", "", 0)> = simulinkInfo.mEngineRPM;
+  %<LibBlockOutputSignal( 14, "", "", 0)> = simulinkInfo.mEngineWaterTemp;
+  %<LibBlockOutputSignal( 15, "", "", 0)> = simulinkInfo.mEngineOilTemp;
+  %<LibBlockOutputSignal( 16, "", "", 0)> = simulinkInfo.mClutchRPM;
+
+  %% Driver input
+  %<LibBlockOutputSignal( 17, "", "", 0)> = simulinkInfo.mUnfilteredThrottle;
+  %<LibBlockOutputSignal( 18, "", "", 0)> = simulinkInfo.mUnfilteredBrake;
+  %<LibBlockOutputSignal( 19, "", "", 0)> = simulinkInfo.mUnfilteredSteering;
+  %<LibBlockOutputSignal( 20, "", "", 0)> = simulinkInfo.mUnfilteredClutch;
+
+  %% Filtered input
+  %<LibBlockOutputSignal( 21, "", "", 0)> = simulinkInfo.mFilteredThrottle;
+  %<LibBlockOutputSignal( 22, "", "", 0)> = simulinkInfo.mFilteredBrake;
+  %<LibBlockOutputSignal( 23, "", "", 0)> = simulinkInfo.mFilteredSteering;
+  %<LibBlockOutputSignal( 24, "", "", 0)> = simulinkInfo.mFilteredClutch;
+
+  %% Misc
+  %<LibBlockOutputSignal( 25, "", "", 0)> = simulinkInfo.mSteeringArmForce;
+  %<LibBlockOutputSignal( 26, "", "", 0)> = simulinkInfo.mFront3rdDeflection;
+  %<LibBlockOutputSignal( 27, "", "", 0)> = simulinkInfo.mRear3rdDeflection;
+
+  %% Aerodynamics
+  %<LibBlockOutputSignal( 28, "", "", 0)> = simulinkInfo.mFrontWingHeight;
+  %<LibBlockOutputSignal( 29, "", "", 0)> = simulinkInfo.mFrontRideHeight;
+  %<LibBlockOutputSignal( 30, "", "", 0)> = simulinkInfo.mRearRideHeight;
+  %<LibBlockOutputSignal( 31, "", "", 0)> = simulinkInfo.mDrag;
+  %<LibBlockOutputSignal( 32, "", "", 0)> = simulinkInfo.mFrontDownforce;
+  %<LibBlockOutputSignal( 33, "", "", 0)> = simulinkInfo.mRearDownforce;
+
+  %% State/damage info
+  %<LibBlockOutputSignal( 34, "", "", 0)> = simulinkInfo.mFuel;
+  %<LibBlockOutputSignal( 35, "", "", 0)> = simulinkInfo.mEngineMaxRPM;
+  %<LibBlockOutputSignal( 36, "", "", 0)> = simulinkInfo.mScheduledStops;
+  %<LibBlockOutputSignal( 37, "", "", 0)> = simulinkInfo.mOverheating;
+  %<LibBlockOutputSignal( 38, "", "", 0)> = simulinkInfo.mDetached;
+  %<LibBlockOutputSignal( 39, "", "", 0)> = simulinkInfo.mDentSeverity[0];
+  %<LibBlockOutputSignal( 39, "", "", 1)> = simulinkInfo.mDentSeverity[1];
+  %<LibBlockOutputSignal( 39, "", "", 2)> = simulinkInfo.mDentSeverity[2];
+  %<LibBlockOutputSignal( 39, "", "", 3)> = simulinkInfo.mDentSeverity[3];
+  %<LibBlockOutputSignal( 39, "", "", 4)> = simulinkInfo.mDentSeverity[4];
+  %<LibBlockOutputSignal( 39, "", "", 5)> = simulinkInfo.mDentSeverity[5];
+  %<LibBlockOutputSignal( 39, "", "", 6)> = simulinkInfo.mDentSeverity[6];
+  %<LibBlockOutputSignal( 39, "", "", 7)> = simulinkInfo.mDentSeverity[7];
+  %<LibBlockOutputSignal( 40, "", "", 0)> = simulinkInfo.mLastImpactET;
+  %<LibBlockOutputSignal( 41, "", "", 0)> = simulinkInfo.mLastImpactMagnitude;
+  %<LibBlockOutputSignal( 42, "", "", 0)> = simulinkInfo.mLastImpactPos[0];
+  %<LibBlockOutputSignal( 42, "", "", 1)> = simulinkInfo.mLastImpactPos[1];
+  %<LibBlockOutputSignal( 42, "", "", 2)> = simulinkInfo.mLastImpactPos[2];
+
+  %<LibBlockOutputSignal( 43, "", "", 0)> = simulinkInfo.mEngineTq;
+  %<LibBlockOutputSignal( 44, "", "", 0)> = simulinkInfo.mCurrentSector & 0x7FFFFFFF; // Sector
+  %<LibBlockOutputSignal( 45, "", "", 0)> = (simulinkInfo.mCurrentSector & 0x80000000) != 0; // In pit
+  %<LibBlockOutputSignal( 46, "", "", 0)> = simulinkInfo.mHeadlights;
+%endfunction
