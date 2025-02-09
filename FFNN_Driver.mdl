@@ -46,8 +46,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-09T13:16:57Z</dcterms:modified>
-  <cp:revision>13.255</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-09T15:36:34Z</dcterms:modified>
+  <cp:revision>13.257</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -129,7 +129,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.255&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.257&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1320,12 +1320,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="dCurvature" SID="1352">
-    <P Name="Position">[75, 208, 105, 222]</P>
+    <P Name="Position">[-695, 118, -665, 132]</P>
     <P Name="ZOrder">3</P>
     <P Name="Port">4</P>
   </Block>
   <Block BlockType="Inport" Name="HeadingError" SID="1353">
-    <P Name="Position">[75, 303, 105, 317]</P>
+    <P Name="Position">[75, 208, 105, 222]</P>
     <P Name="ZOrder">4</P>
     <P Name="Port">5</P>
     <PortProperties>
@@ -1335,7 +1335,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="rLookAhead" SID="1370">
-    <P Name="Position">[-695, 223, -665, 237]</P>
+    <P Name="Position">[75, 303, 105, 317]</P>
     <P Name="ZOrder">399</P>
     <P Name="Port">6</P>
     <PortProperties>
@@ -1346,7 +1346,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="1354">
     <PortCounts in="4" out="1"/>
-    <P Name="Position">[250, -19, 255, 354]</P>
+    <P Name="Position">[250, -20, 255, 355]</P>
     <P Name="ZOrder">5</P>
     <P Name="Inputs">4</P>
     <P Name="DisplayOption">bar</P>
@@ -1375,15 +1375,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration45.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration46.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration45.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739657.553298611077480018138885498046875</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration46.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739657.624722222215496003627777099609375</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -1428,19 +1428,19 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="Dst">1357#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">320</P>
+    <P Name="ZOrder">323</P>
     <P Name="Src">1353#out:1</P>
-    <P Name="Dst">1354#in:4</P>
+    <P Name="Dst">1354#in:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">321</P>
+    <P Name="ZOrder">325</P>
     <P Name="Src">1351#out:1</P>
     <P Name="Dst">1354#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">322</P>
-    <P Name="Src">1352#out:1</P>
-    <P Name="Dst">1354#in:3</P>
+    <P Name="ZOrder">326</P>
+    <P Name="Src">1370#out:1</P>
+    <P Name="Dst">1354#in:4</P>
   </Line>
 </System>
 
@@ -1549,7 +1549,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts out="12"/>
     <P Name="Position">[245, 807, 430, 1173]</P>
     <P Name="ZOrder">25</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Driver Input</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2299,7 +2299,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts in="14"/>
     <P Name="Position">[2305, 572, 2500, 1128]</P>
     <P Name="ZOrder">20</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Physics Visualisation</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2345,7 +2345,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="ForegroundColor">blue</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="FontSize">12</P>
     <P Name="SourceBlock">rFproPhysicsLib/Internal Utility/Simple Vehicle Model - NN</P>
     <P Name="SourceType">rFpro Simple Vehicle Model</P>
@@ -2386,7 +2386,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts out="3"/>
     <P Name="Position">[245, 586, 430, 684]</P>
     <P Name="ZOrder">-163</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Starting Vehicle Location</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2565,7 +2565,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts out="8"/>
     <P Name="Position">[245, 1217, 430, 1488]</P>
     <P Name="ZOrder">33</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Tyre Contact</P>
     <P Name="SourceType">rFpro Library block</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2615,7 +2615,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts out="8"/>
     <P Name="Position">[630, 1222, 815, 1493]</P>
     <P Name="ZOrder">34</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Tyre Contact</P>
     <P Name="SourceType">rFpro Library block</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2665,7 +2665,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts out="8"/>
     <P Name="Position">[245, 1522, 430, 1793]</P>
     <P Name="ZOrder">35</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Tyre Contact</P>
     <P Name="SourceType">rFpro Library block</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2715,7 +2715,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts out="8"/>
     <P Name="Position">[630, 1522, 815, 1793]</P>
     <P Name="ZOrder">36</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Tyre Contact</P>
     <P Name="SourceType">rFpro Library block</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2765,7 +2765,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts in="9"/>
     <P Name="Position">[1970, 1230, 2155, 1490]</P>
     <P Name="ZOrder">21</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Wheel Visualisation</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2783,7 +2783,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts in="9"/>
     <P Name="Position">[2315, 1233, 2500, 1487]</P>
     <P Name="ZOrder">22</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Wheel Visualisation</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2801,7 +2801,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts in="9"/>
     <P Name="Position">[1970, 1530, 2155, 1790]</P>
     <P Name="ZOrder">23</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Wheel Visualisation</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2819,7 +2819,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts in="9"/>
     <P Name="Position">[2315, 1533, 2500, 1787]</P>
     <P Name="ZOrder">24</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/Wheel Visualisation</P>
     <P Name="SourceType">rFpro Remote Physics Interface</P>
     <P Name="SourceProductName">rFpro Physics</P>
@@ -2837,7 +2837,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <PortCounts/>
     <P Name="Position">[245, 422, 425, 523]</P>
     <P Name="ZOrder">29</P>
-    <P Name="LibraryVersion">13.311</P>
+    <P Name="LibraryVersion">13.313</P>
     <P Name="SourceBlock">rFproPhysicsLib/rFpro Setup</P>
     <P Name="SourceType">rFpro Remote Physics Block</P>
     <P Name="SourceProductName">rFpro Physics</P>
