@@ -51,8 +51,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-11T13:58:13Z</dcterms:modified>
-  <cp:revision>13.271</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-11T14:13:59Z</dcterms:modified>
+  <cp:revision>13.272</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -179,7 +179,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.271&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.272&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -2146,15 +2146,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration48.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration50.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration48.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739658.93222222221083939075469970703125</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration50.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739659.592893518507480621337890625</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -4874,14 +4874,24 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">1404</P>
+          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
+          <P Name="ZoomFactor" Class="double">0.92999999999999994</P>
+          <P Name="Offset" Class="double">[-1019.0773269489249, -330.18817204301075]</P>
+          <P Name="SceneRectInView" Class="double">[-1019.0773269489249, -330.18817204301075, 2023.6559139784947, 874.19354838709683]</P>
+        </Object>
+        <Object ObjectID="7">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
           <P Name="ZoomFactor" Class="double">0.8</P>
-          <P Name="Offset" Class="double">[571.20537190082632, -23.320142613462167]</P>
-          <P Name="SceneRectInView" Class="double">[571.20537190082632, -23.320142613462167, 2352.5, 1016.25]</P>
+          <P Name="Offset" Class="double">[571.20537190082632, 211.67985738653783]</P>
+          <P Name="SceneRectInView" Class="double">[571.20537190082632, 211.67985738653783, 2352.5, 1016.25]</P>
         </Object>
-        <Object ObjectID="7">
+        <Object ObjectID="8">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
@@ -4891,7 +4901,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
-        <Object ObjectID="8">
+        <Object ObjectID="9">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
@@ -4901,7 +4911,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
-        <Object ObjectID="9">
+        <Object ObjectID="10">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
@@ -4911,7 +4921,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
-        <Object ObjectID="10">
+        <Object ObjectID="11">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
@@ -4921,7 +4931,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
-        <Object ObjectID="11">
+        <Object ObjectID="12">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
@@ -4931,7 +4941,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
-        <Object ObjectID="12">
+        <Object ObjectID="13">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
@@ -4941,7 +4951,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[-140.77399553571433, 59.364682539682462]</P>
           <P Name="SceneRectInView" Class="double">[-140.77399553571433, 59.364682539682462, 1405.5253968253971, 607.16904761904766]</P>
         </Object>
-        <Object ObjectID="13">
+        <Object ObjectID="14">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
@@ -4950,16 +4960,6 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
-        </Object>
-        <Object ObjectID="14">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">1404</P>
-          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">0.92999999999999994</P>
-          <P Name="Offset" Class="double">[-1019.0773269489249, -214.05913978494624]</P>
-          <P Name="SceneRectInView" Class="double">[-1019.0773269489249, -214.05913978494624, 2023.6559139784947, 874.19354838709683]</P>
         </Object>
         <Object ObjectID="15">
           <P Name="IsActive" Class="logical">0</P>
