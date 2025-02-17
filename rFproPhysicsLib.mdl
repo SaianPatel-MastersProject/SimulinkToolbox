@@ -91,8 +91,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-06-18T13:53:31Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-17T20:54:33Z</dcterms:modified>
-  <cp:revision>13.333</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-17T21:41:17Z</dcterms:modified>
+  <cp:revision>13.334</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -249,7 +249,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.333&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.334&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">all</P>
@@ -40130,6 +40130,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
+  <P Name="Open">on</P>
   <P Name="ZoomFactor">120</P>
   <Block BlockType="Inport" Name="Reset" SID="11276">
     <P Name="Position">[495, 188, 525, 202]</P>
@@ -40195,7 +40196,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="3" out="1"/>
     <P Name="Position">[905, 180, 1010, 260]</P>
     <P Name="ZOrder">101</P>
-    <P Name="LibraryVersion">13.331</P>
+    <P Name="LibraryVersion">13.333</P>
     <P Name="SourceBlock">$bdroot/Build Orientation Matrix</P>
     <P Name="SourceType">rFpro Simulink Toolbox</P>
     <InstanceData>
@@ -40280,6 +40281,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="ShowName">off</P>
     <P Name="Gain">3</P>
   </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="11426">
+    <P Name="Position">[110, -95, 140, -65]</P>
+    <P Name="ZOrder">26271</P>
+    <P Name="Gain">100</P>
+  </Block>
   <Block BlockType="Product" Name="Global&#xA;Pos Matrix" SID="11317">
     <PortCounts in="2" out="1"/>
     <P Name="Position">[1870, 134, 1920, 241]</P>
@@ -40343,7 +40349,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="1" out="1"/>
     <P Name="Position">[1805, 555, 1890, 595]</P>
     <P Name="ZOrder">186</P>
-    <P Name="LibraryVersion">13.331</P>
+    <P Name="LibraryVersion">13.333</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Min Width Pulse</P>
     <P Name="SourceType">rFpro Remote Physics Toolbox Utility</P>
     <InstanceData>
@@ -40360,6 +40366,13 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="2" out="1"/>
     <P Name="Position">[-270, 392, -240, 423]</P>
     <P Name="ZOrder">622</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Minus1" SID="11425">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[-10, -98, 20, -67]</P>
+    <P Name="ZOrder">26270</P>
     <P Name="IconShape">rectangular</P>
     <P Name="Inputs">+-</P>
   </Block>
@@ -40585,6 +40598,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="ShowName">off</P>
     <P Name="Operator">atan2</P>
   </Block>
+  <Block BlockType="UnitDelay" Name="Unit Delay" SID="11424">
+    <P Name="Position">[-170, -92, -135, -58]</P>
+    <P Name="ZOrder">26269</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="HasFrameUpgradeWarning">on</P>
+  </Block>
   <Block BlockType="Selector" Name="Wheel X" SID="11386">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[2035, 73, 2125, 107]</P>
@@ -40716,7 +40735,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="Port">11</P>
   </Block>
   <Block BlockType="Outport" Name="headingError" SID="11407">
-    <P Name="Position">[-345, -182, -315, -168]</P>
+    <P Name="Position">[-50, -182, -20, -168]</P>
     <P Name="ZOrder">26249</P>
     <P Name="Port">12</P>
   </Block>
@@ -40729,6 +40748,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="Position">[-345, -107, -315, -93]</P>
     <P Name="ZOrder">26268</P>
     <P Name="Port">14</P>
+  </Block>
+  <Block BlockType="Outport" Name="dHE" SID="11427">
+    <P Name="Position">[245, -87, 275, -73]</P>
+    <P Name="ZOrder">26272</P>
+    <P Name="Port">15</P>
   </Block>
   <Line>
     <P Name="ZOrder">1</P>
@@ -41241,8 +41265,24 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
   <Line>
     <P Name="ZOrder">218</P>
     <P Name="Src">11331#out:3</P>
-    <P Name="Points">[49, 0; 0, 20]</P>
-    <P Name="Dst">11407#in:1</P>
+    <P Name="Points">[49, 0; 0, 20; 311, 0]</P>
+    <Branch>
+      <P Name="ZOrder">288</P>
+      <P Name="Dst">11424#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">287</P>
+      <P Name="Points">[109, 0]</P>
+      <Branch>
+        <P Name="ZOrder">291</P>
+        <P Name="Points">[0, 85]</P>
+        <P Name="Dst">11425#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">290</P>
+        <P Name="Dst">11407#in:1</P>
+      </Branch>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">220</P>
@@ -41274,6 +41314,21 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="Src">11331#out:4</P>
     <P Name="Points">[97, 0; 0, 45]</P>
     <P Name="Dst">11423#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">289</P>
+    <P Name="Src">11424#out:1</P>
+    <P Name="Dst">11425#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">292</P>
+    <P Name="Src">11425#out:1</P>
+    <P Name="Dst">11426#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">293</P>
+    <P Name="Src">11426#out:1</P>
+    <P Name="Dst">11427#in:1</P>
   </Line>
   <Annotation SID="11412">
     <P Name="Name">Lateral Position and Height Calculation</P>
@@ -56549,8 +56604,8 @@ This block creates a CG_OFFSET_FROM_NOSE variable in the base workspace, for use
     <System Ref="system_11099"/>
   </Block>
   <Block BlockType="SubSystem" Name="Simple Vehicle Model - NN" SID="11094">
-    <PortCounts in="8" out="14"/>
-    <P Name="Position">[1445, 64, 1665, 541]</P>
+    <PortCounts in="8" out="15"/>
+    <P Name="Position">[1445, 66, 1665, 544]</P>
     <P Name="ZOrder">791</P>
     <P Name="ForegroundColor">blue</P>
     <P Name="BackgroundColor">orange</P>
@@ -69389,7 +69444,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="Location">[-1, -8, 1921, 1041]</P>
   <P Name="ZoomFactor">52</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">11423</P>
+  <P Name="SIDHighWatermark">11427</P>
   <Block BlockType="SubSystem" Name="Additional Vehicle" SID="203">
     <PortCounts in="15"/>
     <P Name="Position">[1275, 210, 1470, 590]</P>
@@ -72979,12 +73034,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="5">
           <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">11335</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">11094</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[0.0, 0.0]</P>
-          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+          <P Name="ZoomFactor" Class="double">1.19598365155552</P>
+          <P Name="Offset" Class="double">[-1100.9129237643028, -327.66681137782166]</P>
+          <P Name="SceneRectInView" Class="double">[-1100.9129237643028, -327.66681137782166, 1573.6001052792265, 679.77517831669024]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -73000,23 +73055,13 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">11094</P>
-          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">1.19598365155552</P>
-          <P Name="Offset" Class="double">[-1100.9129237643028, -220.64193705489873]</P>
-          <P Name="SceneRectInView" Class="double">[-1100.9129237643028, -220.64193705489873, 1573.6001052792265, 679.77517831669024]</P>
-        </Object>
-        <Object ObjectID="8">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">11376</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[-800.71484375, -293.0]</P>
           <P Name="SceneRectInView" Class="double">[-800.71484375, -293.0, 1882.0, 813.0]</P>
         </Object>
-        <Object ObjectID="9">
+        <Object ObjectID="8">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
@@ -73025,6 +73070,16 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ZoomFactor" Class="double">0.93</P>
           <P Name="Offset" Class="double">[-378.96858198924724, -270.52150537634407]</P>
           <P Name="SceneRectInView" Class="double">[-378.96858198924724, -270.52150537634407, 2023.6559139784945, 874.19354838709671]</P>
+        </Object>
+        <Object ObjectID="9">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">11335</P>
+          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
         <Object ObjectID="10">
           <P Name="IsActive" Class="logical">0</P>
