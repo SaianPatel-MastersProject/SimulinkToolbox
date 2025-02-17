@@ -1,5 +1,5 @@
 %% Set xRef and yRef
-AIW_Table = Utilities.fnLoadAIW('SUZ_R');
+AIW_Table = Utilities.fnLoadAIW('SUZ');
 xRefOriginal = [AIW_Table.x];
 yRefOriginal = [AIW_Table.y];
 [kappa, ~] = PostProcessing.PE.fnCalculateCurvature([xRefOriginal, yRefOriginal]);
