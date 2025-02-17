@@ -91,8 +91,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-06-18T13:53:31Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-17T19:59:03Z</dcterms:modified>
-  <cp:revision>13.331</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-17T20:03:43Z</dcterms:modified>
+  <cp:revision>13.333</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -249,7 +249,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.331&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.333&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">all</P>
@@ -12393,7 +12393,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_491.xml
     % Loop the idx
     closestWaypointIdx = loopedIdx;
 
-    %%
     closestWaypoint = [AIW_Data(closestWaypointIdx, 1), AIW_Data(closestWaypointIdx, 2)];
 
     if closestWaypointIdx &lt; size(AIW_Data, 1)
@@ -12427,6 +12426,7 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_491.xml
 
     %% LA Heading Error
 
+    [~, closestWaypointIdx] = min(d);
     idxOffset = iLookAhead;
     n  = size(AIW_Data, 1);
     % If idx + idxOffset &gt; n, then you need to loop from the start of the
@@ -12453,7 +12453,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_491.xml
 
     % Loop the idx
     closestWaypointIdx = loopedIdx;
-    closestWaypoint = [AIW_Data(closestWaypointIdx, 1), AIW_Data(closestWaypointIdx, 2)];
 
     if closestWaypointIdx &lt; size(AIW_Data, 1)
 
@@ -12469,16 +12468,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_491.xml
 
     % Normalise the tangent vector
     tangentVec = tangentVec / norm(tangentVec);
-
-    % Get the vector perp to the tangent vector
-    normalVec = [-tangentVec(2), tangentVec(1)];
-
-    % Get the error vector, the vector between the closest waypoint and the
-    % car point
-    errorVec = [xV - closestWaypoint(1), yV - closestWaypoint(2)];
-
-    % Calculate the unsigned CTE
-    CTE = dot(errorVec, normalVec);
 
     % Get the heading of the reference
     thetaRef = atan2(tangentVec(2), tangentVec(1));
@@ -40141,7 +40130,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
-  <P Name="Open">on</P>
   <P Name="ZoomFactor">120</P>
   <Block BlockType="Inport" Name="Reset" SID="11276">
     <P Name="Position">[495, 188, 525, 202]</P>
@@ -40207,7 +40195,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="3" out="1"/>
     <P Name="Position">[905, 180, 1010, 260]</P>
     <P Name="ZOrder">101</P>
-    <P Name="LibraryVersion">13.330</P>
+    <P Name="LibraryVersion">13.331</P>
     <P Name="SourceBlock">$bdroot/Build Orientation Matrix</P>
     <P Name="SourceType">rFpro Simulink Toolbox</P>
     <InstanceData>
@@ -40355,7 +40343,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="1" out="1"/>
     <P Name="Position">[1805, 555, 1890, 595]</P>
     <P Name="ZOrder">186</P>
-    <P Name="LibraryVersion">13.330</P>
+    <P Name="LibraryVersion">13.331</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Min Width Pulse</P>
     <P Name="SourceType">rFpro Remote Physics Toolbox Utility</P>
     <InstanceData>
@@ -72991,12 +72979,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="5">
           <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">11094</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">11335</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">1.19598365155552</P>
-          <P Name="Offset" Class="double">[-1100.9129237643028, -220.64193705489873]</P>
-          <P Name="SceneRectInView" Class="double">[-1100.9129237643028, -220.64193705489873, 1573.6001052792265, 679.77517831669024]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -73012,13 +73000,23 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">11094</P>
+          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
+          <P Name="ZoomFactor" Class="double">1.19598365155552</P>
+          <P Name="Offset" Class="double">[-1100.9129237643028, -220.64193705489873]</P>
+          <P Name="SceneRectInView" Class="double">[-1100.9129237643028, -220.64193705489873, 1573.6001052792265, 679.77517831669024]</P>
+        </Object>
+        <Object ObjectID="8">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">11376</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[-800.71484375, -293.0]</P>
           <P Name="SceneRectInView" Class="double">[-800.71484375, -293.0, 1882.0, 813.0]</P>
         </Object>
-        <Object ObjectID="8">
+        <Object ObjectID="9">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
@@ -73027,16 +73025,6 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ZoomFactor" Class="double">0.93</P>
           <P Name="Offset" Class="double">[-378.96858198924724, -270.52150537634407]</P>
           <P Name="SceneRectInView" Class="double">[-378.96858198924724, -270.52150537634407, 2023.6559139784945, 874.19354838709671]</P>
-        </Object>
-        <Object ObjectID="9">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">11335</P>
-          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[0.0, 0.0]</P>
-          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
         <Object ObjectID="10">
           <P Name="IsActive" Class="logical">0</P>
