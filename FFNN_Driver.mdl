@@ -52,8 +52,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-17T22:01:48Z</dcterms:modified>
-  <cp:revision>13.287</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-02-26T18:30:46Z</dcterms:modified>
+  <cp:revision>13.288</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -189,7 +189,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.287&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.288&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1802,8 +1802,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_43.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">43</P>
-  <P Name="visible">1</P>
-  <subviewS/>
   <P Name="ssIdHighWaterMark">6</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -2169,10 +2167,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="1354">
-    <PortCounts in="5" out="1"/>
-    <P Name="Position">[-215, -254, -210, 214]</P>
+    <PortCounts in="4" out="1"/>
+    <P Name="Position">[-215, -252, -210, 217]</P>
     <P Name="ZOrder">5</P>
-    <P Name="Inputs">5</P>
+    <P Name="Inputs">4</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
   </Block>
@@ -2301,15 +2299,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration58.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration48.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration58.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739665.91778935189358890056610107421875</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration48.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739658.93222222221083939075469970703125</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -2322,7 +2320,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="Position">[-170, -32, -140, -8]</P>
     <P Name="ZOrder">6</P>
     <P Name="OutputDimensionality">Customize</P>
-    <P Name="OutputDimensions">[1,5]</P>
+    <P Name="OutputDimensions">[1,4]</P>
   </Block>
   <Block BlockType="Outport" Name="Steering_NN" SID="1349">
     <P Name="Position">[180, -27, 210, -13]</P>
@@ -2351,6 +2349,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">373</P>
     <P Name="Src">1408#out:1</P>
+    <P Name="Points">[32, 0; 0, 20]</P>
     <P Name="Dst">1354#in:1</P>
   </Line>
   <Line>
@@ -2361,21 +2360,25 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">375</P>
     <P Name="Src">1409#out:1</P>
+    <P Name="Points">[24, 0; 0, 40]</P>
     <P Name="Dst">1354#in:2</P>
   </Line>
   <Line>
     <P Name="ZOrder">376</P>
     <P Name="Src">1411#out:1</P>
+    <P Name="Points">[16, 0; 0, 60]</P>
     <P Name="Dst">1354#in:3</P>
   </Line>
   <Line>
     <P Name="ZOrder">377</P>
     <P Name="Src">1410#out:1</P>
+    <P Name="Points">[8, 0; 0, 80]</P>
     <P Name="Dst">1354#in:4</P>
   </Line>
   <Line>
     <P Name="ZOrder">378</P>
     <P Name="Src">1354#out:1</P>
+    <P Name="Points">[15, 0; 0, -5]</P>
     <P Name="Dst">1355#in:1</P>
   </Line>
   <Line>
@@ -2392,11 +2395,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="ZOrder">381</P>
     <P Name="Src">1357#out:1</P>
     <P Name="Dst">1349#in:1</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">382</P>
-    <P Name="Src">1421#out:1</P>
-    <P Name="Dst">1354#in:5</P>
   </Line>
   <Line>
     <P Name="ZOrder">383</P>
@@ -5132,10 +5130,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">1347</P>
-          <P Name="Extents" Class="double">[1882.0, 601.0]</P>
+          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
           <P Name="ZoomFactor" Class="double">1.08876560332871</P>
-          <P Name="Offset" Class="double">[-1016.7815286624204, -295.89745222929946]</P>
-          <P Name="SceneRectInView" Class="double">[-1016.7815286624204, -295.89745222929946, 1728.5630573248409, 552.00127388535032]</P>
+          <P Name="Offset" Class="double">[-1016.7815286624204, -393.255414012739]</P>
+          <P Name="SceneRectInView" Class="double">[-1016.7815286624204, -393.255414012739, 1728.5630573248409, 746.71719745222936]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -5435,7 +5433,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAADavwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAAA2oAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAACEAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8ARQB4AGEAbQBwAGwAZQBTAGkAbQBwAGwAZQBWAGUAaABpAGMAbABlAQAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAIwA////AAAAAQAAAVcAAANq/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAeQAAAiMAAAGsAP///wAAAAMAAAeAAAAA0PwBAAAAAfv/////AQAAAAAAAAeAAAACeQD///8AAAeAAAAClgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAADavwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAAA2oAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAACEAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8ARQB4AGEAbQBwAGwAZQBTAGkAbQBwAGwAZQBWAGUAaABpAGMAbABlAQAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAIwA////AAAAAQAAAVcAAANq/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAeQAAAiMAAAGsAP///wAAAAMAAAeAAAAA0PwBAAAAAfv/////AAAAAAD/////AAACeQD///8AAAeAAAADagAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">23ffbd88-0b72-4c8e-9f5c-7fc57ccb4382</P>
     </Object>
