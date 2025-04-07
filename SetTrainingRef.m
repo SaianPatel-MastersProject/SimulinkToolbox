@@ -1,10 +1,10 @@
 %% Script to automate standardization (or normalization)
 
 % Read in the reference training data (not transformed)
-refTrainingData = readtable("D:\Users\Saian\Workspace\NeuralNetworks\FFNN\Iteration75\TrainingData.csv", "VariableNamingRule", "preserve");
+refTrainingData = readtable("D:\Users\Saian\Workspace\NeuralNetworks\FFNN\Iteration75_LZ\TrainingData.csv", "VariableNamingRule", "preserve");
 
 % Get the preProcessArray
-preProcessArray = fnMakePreProcessArray(table2array(refTrainingData), 'N');
+preProcessArray = fnMakePreProcessArray(table2array(refTrainingData), 'S');
 
 %% Function for producing an array for data transformation to be used in Simulink
 function preProcessArray = fnMakePreProcessArray(refTrainingData, processMode)
