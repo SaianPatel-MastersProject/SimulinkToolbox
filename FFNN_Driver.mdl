@@ -53,8 +53,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-07T18:45:00Z</dcterms:modified>
-  <cp:revision>13.347</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-07T19:19:50Z</dcterms:modified>
+  <cp:revision>13.348</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -199,7 +199,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.347&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.348&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -2513,15 +2513,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration75_LZ.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration75_BX.mat</P>
       <P Name="MiniBatchSize">128</P>
-      <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
+      <P Name="InputDataFormats">{ &apos;keras_tensor_1&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration75_LZ.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739714.8226273148320615291595458984375</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration75_BX.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739714.84658564813435077667236328125</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -5406,8 +5406,8 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="LoadSaveID" Class="char">1347</P>
           <P Name="Extents" Class="double">[920.0, 804.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[-712.92648911147592, -498.484844927627]</P>
-          <P Name="SceneRectInView" Class="double">[-712.92648911147592, -498.484844927627, 920.0, 804.0]</P>
+          <P Name="Offset" Class="double">[-548.92648911147592, -498.484844927627]</P>
+          <P Name="SceneRectInView" Class="double">[-548.92648911147592, -498.484844927627, 920.0, 804.0]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
