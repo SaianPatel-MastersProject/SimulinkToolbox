@@ -90,8 +90,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-06-18T13:53:31Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-08T13:21:40Z</dcterms:modified>
-  <cp:revision>13.356</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-08T13:30:46Z</dcterms:modified>
+  <cp:revision>13.358</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -239,7 +239,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.356&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.358&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">all</P>
@@ -12334,41 +12334,10 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_492.xml
     d = sqrt((AIW_Data(:,1) - xV).^2 + (AIW_Data(:,2) -yV).^2);
     [~, closestWaypointIdx] = min(d);
 
-    %% Curvature stuff
-    [dLookOverall, kappaSorted] = Utilities.fnLookAheadDistanceSigmoidCurvature(6, 30, 200, 0.01, kappaInterp);
-    rCurvCurrent = kappaInterp(closestWaypointIdx);
-
-    dLookAhead = interp1(kappaSorted, dLookOverall, abs(rCurvCurrent));
-    iLookAhead = round(dLookAhead/0.1);
-
-
     %% Index Looping
 
     idxOffset = 3 / 0.1;
     loopedIdx = Utilities.fnLoopArrayIndex(AIW_Data, closestWaypointIdx, idxOffset);
-
-    % n  = size(AIW_Data, 1);
-    % % If idx + idxOffset &gt; n, then you need to loop from the start of the
-    % % array. E.g. if n is 100, idx is 90 and idxOffset is 25, then the
-    % % looped index will be 15 = (25 - (100 - 90))
-    % if closestWaypointIdx + idxOffset &gt; n
-    % 
-    %     loopedIdx = idxOffset - (n - closestWaypointIdx);
-    % 
-    %     % If idx + idxOffset &lt; 0 (in the case of a negative offset), then you
-    %     % need to loop from the end of the array. E.g. if n is 100, idx is 14,
-    %     % and idxOffset is -32, then the looped index will be 82 = (idx + n -
-    %     % idxOffset)
-    % elseif closestWaypointIdx + idxOffset &lt; 0
-    % 
-    %     loopedIdx = closestWaypointIdx + n - abs(idxOffset);
-    %     % In the simplest case, idx + idxOffset is well within the array bounds
-    %     % so you can apply the offset easily
-    % else
-    % 
-    %     loopedIdx = closestWaypointIdx + idxOffset;
-    % 
-    % end
 
     % Loop the idx
     closestWaypointIdx = loopedIdx;
@@ -12574,7 +12543,7 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_504.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="504">
-  <P Name="name">Internal Utility/Simple Vehicle Model - NN/Throttle &amp; Brake PID Controller/MATLAB Function</P>
+  <P Name="name">Internal Utility/Simple Vehicle Model - NN/Curcature Calculation/MATLAB Function</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -12621,100 +12590,19 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_504.xml
     rCurvCurrent_0 = kappaInterp(closestWaypointIdx);
 
     %% Get rLookAhead
-
-    % Initilaise the lookAhead array
-    nLookAheadPoints = 1;
-
     dLookAhead = interp1(kappaSorted, dLookOverall, abs(rCurvCurrent_0));
     iLookAhead = round(dLookAhead/0.1);
 
     dLookAhead_0 = 3;
     iLookAhead_0 = round(dLookAhead_0/0.1);
 
-    lookAheadOffset = iLookAhead_0;
-    rLookAhead = zeros([1, nLookAheadPoints]);
-
-    % Get the size of the array
-    n = numel(kappaInterp);
-
     %% Getting point 3m ahead
     loopedIdx = Utilities.fnLoopArrayIndex(kappaInterp, closestWaypointIdx, iLookAhead_0);
     rCurvCurrent = kappaInterp(loopedIdx);
 
-    % % Loop through each look ahead point
-    % for i = 1:nLookAheadPoints
-    % 
-    %     % Loop the index
-    %     idxOffset = i * lookAheadOffset;
-    % 
-    %     %% Index Looping
-    %     % If idx + idxOffset &gt; n, then you need to loop from the start of the
-    %     % array. E.g. if n is 100, idx is 90 and idxOffset is 25, then the
-    %     % looped index will be 15 = (25 - (100 - 90))
-    %     if closestWaypointIdx + idxOffset &gt; n
-    % 
-    %         loopedIdx = idxOffset - (n - closestWaypointIdx);
-    % 
-    %     % If idx + idxOffset &lt; 0 (in the case of a negative offset), then you
-    %     % need to loop from the end of the array. E.g. if n is 100, idx is 14,
-    %     % and idxOffset is -32, then the looped index will be 82 = (idx + n -
-    %     % idxOffset)
-    %     elseif closestWaypointIdx + idxOffset &lt; 0
-    % 
-    %         loopedIdx = closestWaypointIdx + n - abs(idxOffset);
-    %     % In the simplest case, idx + idxOffset is well within the array bounds
-    %     % so you can apply the offset easily
-    %     else
-    % 
-    %         loopedIdx = closestWaypointIdx + idxOffset;
-    % 
-    %     end
-    % 
-    %     % Get the corresponding data
-    %     rCurvCurrent = kappaInterp(loopedIdx);
-    % 
-    % 
-    % end
-
     %% Using dynamic look-ahead
     loopedIdx = Utilities.fnLoopArrayIndex(kappaInterp, closestWaypointIdx, iLookAhead);
     rLookAhead = kappaInterp(loopedIdx);
-    % lookAheadOffset = iLookAhead;
-    % 
-    % % Loop through each look ahead point
-    % for i = 1:nLookAheadPoints
-    % 
-    %     % Loop the index
-    %     idxOffset = i * lookAheadOffset;
-    % 
-    %     %% Index Looping
-    %     % If idx + idxOffset &gt; n, then you need to loop from the start of the
-    %     % array. E.g. if n is 100, idx is 90 and idxOffset is 25, then the
-    %     % looped index will be 15 = (25 - (100 - 90))
-    %     if closestWaypointIdx + idxOffset &gt; n
-    % 
-    %         loopedIdx = idxOffset - (n - closestWaypointIdx);
-    % 
-    %     % If idx + idxOffset &lt; 0 (in the case of a negative offset), then you
-    %     % need to loop from the end of the array. E.g. if n is 100, idx is 14,
-    %     % and idxOffset is -32, then the looped index will be 82 = (idx + n -
-    %     % idxOffset)
-    %     elseif closestWaypointIdx + idxOffset &lt; 0
-    % 
-    %         loopedIdx = closestWaypointIdx + n - abs(idxOffset);
-    %     % In the simplest case, idx + idxOffset is well within the array bounds
-    %     % so you can apply the offset easily
-    %     else
-    % 
-    %         loopedIdx = closestWaypointIdx + idxOffset;
-    % 
-    %     end
-    % 
-    %     % Get the corresponding data
-    %     rLookAhead(i) = kappaInterp(loopedIdx);
-    % 
-    % 
-    % end
 
 end</P>
       </eml>
@@ -14895,7 +14783,7 @@ SELECT/Bounding box decode/Unpack bounding boxes</P>
   </instance>
   <instance id="514">
     <P Name="machine">24</P>
-    <P Name="name">Internal Utility/Simple Vehicle Model - NN/Throttle &amp; Brake PID Controller/MATLAB Function</P>
+    <P Name="name">Internal Utility/Simple Vehicle Model - NN/Curcature Calculation/MATLAB Function</P>
     <P Name="chart">504</P>
   </instance>
   <instance id="525">
@@ -39855,8 +39743,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
-  <P Name="Open">on</P>
-  <P Name="ZoomFactor">126</P>
   <Block BlockType="Inport" Name="Reset" SID="11276">
     <P Name="Position">[495, 188, 525, 202]</P>
     <P Name="ZOrder">-1</P>
@@ -39921,7 +39807,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="3" out="1"/>
     <P Name="Position">[905, 180, 1010, 260]</P>
     <P Name="ZOrder">101</P>
-    <P Name="LibraryVersion">13.355</P>
+    <P Name="LibraryVersion">13.357</P>
     <P Name="SourceBlock">$bdroot/Build Orientation Matrix</P>
     <P Name="SourceType">rFpro Simulink Toolbox</P>
     <InstanceData>
@@ -39971,6 +39857,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="BackgroundColor">orange</P>
     <P Name="Value">40</P>
   </Block>
+  <Block BlockType="SubSystem" Name="Curcature Calculation" SID="11376">
+    <PortCounts in="1" out="2"/>
+    <P Name="Position">[-860, -76, -550, 106]</P>
+    <P Name="ZOrder">802</P>
+    <P Name="BackgroundColor">magenta</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_11376"/>
+  </Block>
   <Block BlockType="SubSystem" Name="Drag Model" SID="11304">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[-185, 647, -60, 723]</P>
@@ -39991,7 +39885,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="OutputSizes">1,1</P>
   </Block>
   <Block BlockType="From" Name="From" SID="11314">
-    <P Name="Position">[-1090, -240, -990, -220]</P>
+    <P Name="Position">[-1090, -225, -990, -205]</P>
     <P Name="ZOrder">26164</P>
     <P Name="GotoTag">LocalPos</P>
   </Block>
@@ -40069,7 +39963,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="1" out="1"/>
     <P Name="Position">[1805, 555, 1890, 595]</P>
     <P Name="ZOrder">186</P>
-    <P Name="LibraryVersion">13.355</P>
+    <P Name="LibraryVersion">13.357</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Min Width Pulse</P>
     <P Name="SourceType">rFpro Remote Physics Toolbox Utility</P>
     <InstanceData>
@@ -40290,14 +40184,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="Criteria">u2 ~= 0</P>
     <P Name="InputSameDT">off</P>
     <P Name="SaturateOnIntegerOverflow">off</P>
-  </Block>
-  <Block BlockType="SubSystem" Name="Throttle &amp; Brake PID Controller" SID="11376">
-    <PortCounts in="1" out="2"/>
-    <P Name="Position">[-860, -76, -550, 106]</P>
-    <P Name="ZOrder">802</P>
-    <P Name="BackgroundColor">magenta</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <System Ref="system_11376"/>
   </Block>
   <Block BlockType="Trigonometry" Name="Trigonometric&#xA;Function" SID="11384">
     <PortCounts in="2" out="1"/>
@@ -40860,7 +40746,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
   <Line>
     <P Name="ZOrder">101</P>
     <P Name="Src">11314#out:1</P>
-    <P Name="Points">[60, 0; 0, 15]</P>
     <P Name="Dst">11331#in:1</P>
   </Line>
   <Line>
@@ -42668,6 +42553,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11331.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
+  <P Name="Open">on</P>
   <P Name="ZoomFactor">94</P>
   <Block BlockType="Inport" Name="currentPosition" SID="11332">
     <P Name="Position">[85, 108, 115, 122]</P>
@@ -72427,17 +72313,17 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       </Object>
       <Array PropName="EditorsInfo" Type="Simulink.EditorInfo" Dimension="1*42">
         <Object ObjectID="5">
-          <P Name="IsActive" Class="logical">1</P>
+          <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">11094</P>
+          <P Name="LoadSaveID" Class="char">11331</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">1.2639925373134326</P>
-          <P Name="Offset" Class="double">[-953.127523647989, -324.34549928035915]</P>
-          <P Name="SceneRectInView" Class="double">[-953.127523647989, -324.34549928035915, 1488.9328413284136, 643.2]</P>
+          <P Name="ZoomFactor" Class="double">0.94041044776119409</P>
+          <P Name="Offset" Class="double">[-323.681512989525, -270.52150537634407]</P>
+          <P Name="SceneRectInView" Class="double">[-323.681512989525, -270.52150537634407, 2001.2538189898028, 864.516129032258]</P>
         </Object>
         <Object ObjectID="6">
-          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
           <P Name="LoadSaveID" Class="char">11335</P>
@@ -72449,22 +72335,22 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="7">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">11331</P>
-          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">0.94041044776119409</P>
-          <P Name="Offset" Class="double">[-323.681512989525, -270.52150537634407]</P>
-          <P Name="SceneRectInView" Class="double">[-323.681512989525, -270.52150537634407, 2001.2538189898028, 864.516129032258]</P>
-        </Object>
-        <Object ObjectID="8">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
           <P Name="LoadSaveID" Class="char">11381</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="8">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">11094</P>
+          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[-1159.5184830575829, -424.93184614382778]</P>
+          <P Name="SceneRectInView" Class="double">[-1159.5184830575829, -424.93184614382778, 1882.0, 813.0]</P>
         </Object>
         <Object ObjectID="9">
           <P Name="IsActive" Class="logical">0</P>
