@@ -49,8 +49,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-19T09:25:07Z</dcterms:modified>
-  <cp:revision>13.381</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-19T09:45:39Z</dcterms:modified>
+  <cp:revision>13.383</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -159,7 +159,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.381&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.383&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1807,7 +1807,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <P Name="Location">[-1, -8, 1921, 1041]</P>
   <P Name="SystemRect">[-1086.000000, -615.000000, 690.922930, 380.000000]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">158</P>
+  <P Name="ZoomFactor">150</P>
   <Block BlockType="Inport" Name="CTE" SID="1348">
     <P Name="Position">[-650, -222, -620, -208]</P>
     <P Name="ZOrder">-1</P>
@@ -1876,20 +1876,21 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="Position">[-195, -242, -160, -208]</P>
     <P Name="ZOrder">409</P>
     <P Name="InputPortMap">u0</P>
-    <P Name="DelayLength">1</P>
+    <P Name="DelayLength">20</P>
   </Block>
   <Block BlockType="Delay" Name="Delay1" SID="1455">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[-195, -282, -160, -248]</P>
     <P Name="ZOrder">410</P>
     <P Name="InputPortMap">u0</P>
+    <P Name="DelayLength">40</P>
   </Block>
   <Block BlockType="Delay" Name="Delay2" SID="1456">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[-195, -322, -160, -288]</P>
     <P Name="ZOrder">411</P>
     <P Name="InputPortMap">u0</P>
-    <P Name="DelayLength">3</P>
+    <P Name="DelayLength">60</P>
   </Block>
   <Block BlockType="SubSystem" Name="MATLAB Function" SID="1457">
     <PortCounts in="4" out="1"/>
@@ -1901,6 +1902,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="TreatAsAtomicUnit">on</P>
     <P Name="SFBlockType">MATLAB Function</P>
     <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">y</P>
+      </Port>
+    </PortProperties>
     <System Ref="system_1457"/>
   </Block>
   <Block BlockType="SubSystem" Name="MATLAB Function5" SID="1433">
@@ -1936,15 +1942,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration79.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration80.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration79.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739726.4339004629291594028472900390625</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration80.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739726.448124999995343387126922607421875</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -2250,6 +2256,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1457.xml
     <P Name="Position">[20, 206, 40, 224]</P>
     <P Name="ZOrder">21</P>
     <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">processedInputs</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Demux" Name=" Demux " SID="1457::26">
     <PortCounts in="1" out="1"/>
@@ -2265,7 +2276,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1457.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[4 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <PortProperties>
       <Port Type="out" Index="2">
@@ -4607,10 +4618,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">1347</P>
-          <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">1.5790482274033852</P>
-          <P Name="Offset" Class="double">[-683.42078782362466, -344.93355582524276]</P>
-          <P Name="SceneRectInView" Class="double">[-683.42078782362466, -344.93355582524276, 1191.8572006472493, 514.86711165048553]</P>
+          <P Name="Extents" Class="double">[1882.0, 601.0]</P>
+          <P Name="ZoomFactor" Class="double">1.5</P>
+          <P Name="Offset" Class="double">[-709.91957423139161, -345.03367718446606]</P>
+          <P Name="SceneRectInView" Class="double">[-709.91957423139161, -345.03367718446606, 1254.6666666666667, 400.66666666666669]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -5020,7 +5031,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAADavwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAAA2oAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAACEAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8ARQB4AGEAbQBwAGwAZQBTAGkAbQBwAGwAZQBWAGUAaABpAGMAbABlAQAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAIwA////AAAAAQAAAVcAAANq/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAeQAAAiMAAAGsAP///wAAAAMAAAeAAAAA0PwBAAAAAfv/////AAAAAAD/////AAACeQD///8AAAeAAAADagAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAADavwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAAA2oAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAACEAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8ARQB4AGEAbQBwAGwAZQBTAGkAbQBwAGwAZQBWAGUAaABpAGMAbABlAQAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAIwA////AAAAAQAAAVcAAANq/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAeQAAAiMAAAGsAP///wAAAAMAAAeAAAAA0PwBAAAAAfv/////AQAAAAAAAAeAAAACeQD///8AAAeAAAAClgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">23ffbd88-0b72-4c8e-9f5c-7fc57ccb4382</P>
     </Object>
