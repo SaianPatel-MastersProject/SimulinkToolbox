@@ -90,8 +90,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-06-18T13:53:31Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-21T13:13:25Z</dcterms:modified>
-  <cp:revision>13.363</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-21T13:44:58Z</dcterms:modified>
+  <cp:revision>13.364</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -239,7 +239,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.363&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.364&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">all</P>
@@ -12380,10 +12380,10 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_494.xml
     kappa_i = kappaInterp(closestWaypointIdx);
     dLookAhead = interp1(kappaSorted, dLookOverall, abs(kappa_i));
     iLookAhead = round(dLookAhead/0.1);
-    [~, ~, lookAheadHE] = PostProcessing.PE.fnCalculatePathErrorLA([xV, yV, thetaV], AIW_Data, iLookAhead);
+    [projectedCTE, ~, lookAheadHE] = PostProcessing.PE.fnCalculatePathErrorLA([xV, yV, thetaV], AIW_Data, iLookAhead);
 
     %% Project Errors
-    [projectedCTE, ~, ~, ~, ~] = PostProcessing.PE.fnCalculateProjectedPathError([xV, yV, thetaV], AIW_Data, dLookAhead);
+    % [projectedCTE, ~, ~, ~, ~] = PostProcessing.PE.fnCalculateProjectedPathError([xV, yV, thetaV], AIW_Data, dLookAhead);
     
 
 
@@ -39794,7 +39794,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
-  <P Name="Open">on</P>
   <P Name="ZoomFactor">81</P>
   <Block BlockType="Inport" Name="Reset" SID="11276">
     <P Name="Position">[495, 188, 525, 202]</P>
@@ -39860,7 +39859,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="3" out="1"/>
     <P Name="Position">[905, 180, 1010, 260]</P>
     <P Name="ZOrder">101</P>
-    <P Name="LibraryVersion">13.362</P>
+    <P Name="LibraryVersion">13.363</P>
     <P Name="SourceBlock">$bdroot/Build Orientation Matrix</P>
     <P Name="SourceType">rFpro Simulink Toolbox</P>
     <InstanceData>
@@ -40016,7 +40015,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="1" out="1"/>
     <P Name="Position">[1805, 555, 1890, 595]</P>
     <P Name="ZOrder">186</P>
-    <P Name="LibraryVersion">13.362</P>
+    <P Name="LibraryVersion">13.363</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Min Width Pulse</P>
     <P Name="SourceType">rFpro Remote Physics Toolbox Utility</P>
     <InstanceData>
@@ -42626,6 +42625,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11331.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
+  <P Name="Open">on</P>
   <P Name="ZoomFactor">94</P>
   <Block BlockType="Inport" Name="currentPosition" SID="11332">
     <P Name="Position">[85, 108, 115, 122]</P>
@@ -72435,17 +72435,17 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       </Object>
       <Array PropName="EditorsInfo" Type="Simulink.EditorInfo" Dimension="1*42">
         <Object ObjectID="5">
-          <P Name="IsActive" Class="logical">1</P>
+          <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">11094</P>
+          <P Name="LoadSaveID" Class="char">11331</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">0.808955223880597</P>
-          <P Name="Offset" Class="double">[-1471.5646566497535, -598.67097657861041]</P>
-          <P Name="SceneRectInView" Class="double">[-1471.5646566497535, -598.67097657861041, 2326.4575645756458, 1005.0]</P>
+          <P Name="ZoomFactor" Class="double">0.94041044776119409</P>
+          <P Name="Offset" Class="double">[76.143904619489831, -270.52150537634407]</P>
+          <P Name="SceneRectInView" Class="double">[76.143904619489831, -270.52150537634407, 2001.2538189898028, 864.516129032258]</P>
         </Object>
         <Object ObjectID="6">
-          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
           <P Name="LoadSaveID" Class="char">11335</P>
@@ -72458,11 +72458,11 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">11331</P>
+          <P Name="LoadSaveID" Class="char">11094</P>
           <P Name="Extents" Class="double">[1882.0, 813.0]</P>
-          <P Name="ZoomFactor" Class="double">0.94041044776119409</P>
-          <P Name="Offset" Class="double">[76.143904619489831, -270.52150537634407]</P>
-          <P Name="SceneRectInView" Class="double">[76.143904619489831, -270.52150537634407, 2001.2538189898028, 864.516129032258]</P>
+          <P Name="ZoomFactor" Class="double">0.808955223880597</P>
+          <P Name="Offset" Class="double">[-1471.5646566497535, -598.67097657861041]</P>
+          <P Name="SceneRectInView" Class="double">[-1471.5646566497535, -598.67097657861041, 2326.4575645756458, 1005.0]</P>
         </Object>
         <Object ObjectID="8">
           <P Name="IsActive" Class="logical">0</P>
