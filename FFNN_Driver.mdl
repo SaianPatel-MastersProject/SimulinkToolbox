@@ -48,8 +48,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-21T10:03:49Z</dcterms:modified>
-  <cp:revision>13.383</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-04-21T10:27:33Z</dcterms:modified>
+  <cp:revision>13.384</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -149,7 +149,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.383&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.384&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1679,10 +1679,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="1354">
-    <PortCounts in="5" out="1"/>
+    <PortCounts in="6" out="1"/>
     <P Name="Position">[-530, -259, -520, 89]</P>
     <P Name="ZOrder">5</P>
-    <P Name="Inputs">5</P>
+    <P Name="Inputs">6</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
   </Block>
@@ -1701,6 +1701,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Block BlockType="Constant" Name="Constant1" SID="1435">
     <P Name="Position">[-455, 30, -425, 60]</P>
     <P Name="ZOrder">408</P>
+  </Block>
+  <Block BlockType="Delay" Name="Delay" SID="1457">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[250, 53, 285, 87]</P>
+    <P Name="ZOrder">410</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="InputPortMap">u0</P>
+    <P Name="DelayLength">20</P>
   </Block>
   <Block BlockType="SubSystem" Name="MATLAB Function5" SID="1433">
     <PortCounts in="3" out="1"/>
@@ -1735,15 +1744,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration89.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration90.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration89.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739728.4608449074439704418182373046875</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration90.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739728.476967592607252299785614013671875</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -1756,7 +1765,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="Position">[-455, -97, -425, -73]</P>
     <P Name="ZOrder">6</P>
     <P Name="OutputDimensionality">Customize</P>
-    <P Name="OutputDimensions">[1,5]</P>
+    <P Name="OutputDimensions">[1,6]</P>
   </Block>
   <Block BlockType="Outport" Name="Steering_NN" SID="1349">
     <P Name="Position">[455, -27, 485, -13]</P>
@@ -1780,18 +1789,27 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">413</P>
     <P Name="Src">1357#out:1</P>
-    <P Name="Dst">1349#in:1</P>
+    <P Name="Points">[176, 0]</P>
+    <Branch>
+      <P Name="ZOrder">437</P>
+      <P Name="Points">[0, 90]</P>
+      <P Name="Dst">1457#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">436</P>
+      <P Name="Dst">1349#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">418</P>
     <P Name="Src">1348#out:1</P>
-    <P Name="Points">[14, 0; 0, -10]</P>
+    <P Name="Points">[12, 0; 0, -20]</P>
     <P Name="Dst">1354#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">419</P>
     <P Name="Src">1351#out:1</P>
-    <P Name="Points">[28, 0; 0, -25]</P>
+    <P Name="Points">[23, 0; 0, -45]</P>
     <P Name="Dst">1354#in:2</P>
   </Line>
   <Line>
@@ -1807,13 +1825,13 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">429</P>
     <P Name="Src">1370#out:1</P>
-    <P Name="Points">[56, 0; 0, -55]</P>
+    <P Name="Points">[47, 0; 0, -95]</P>
     <P Name="Dst">1354#in:4</P>
   </Line>
   <Line>
     <P Name="ZOrder">430</P>
     <P Name="Src">1353#out:1</P>
-    <P Name="Points">[42, 0; 0, -40]</P>
+    <P Name="Points">[35, 0; 0, -70]</P>
     <P Name="Dst">1354#in:3</P>
   </Line>
   <Line>
@@ -1824,8 +1842,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">435</P>
     <P Name="Src">1455#out:1</P>
-    <P Name="Points">[44, 0; 0, -70]</P>
+    <P Name="Points">[58, 0; 0, -120]</P>
     <P Name="Dst">1354#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">438</P>
+    <P Name="Src">1457#out:1</P>
+    <P Name="Points">[-258, 0; 0, 38; -561, 0; 0, -43]</P>
+    <P Name="Dst">1354#in:6</P>
   </Line>
 </System>
 
@@ -1996,7 +2020,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="Location">[-1, -8, 1921, 1041]</P>
   <P Name="ZoomFactor">50</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">1456</P>
+  <P Name="SIDHighWatermark">1457</P>
   <Block BlockType="Bias" Name="Bias" SID="1316">
     <P Name="Position">[2185, 895, 2225, 925]</P>
     <P Name="ZOrder">216</P>
