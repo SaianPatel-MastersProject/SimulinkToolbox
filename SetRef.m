@@ -1,5 +1,5 @@
 %% Set xRef and yRef
-track = 'SUZ';
+track = 'BAR';
 AIW_Table = Utilities.fnLoadAIW(track);
 xRefOriginal = [AIW_Table.x];
 yRefOriginal = [AIW_Table.y];
