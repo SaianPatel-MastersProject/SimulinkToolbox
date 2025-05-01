@@ -92,8 +92,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-06-18T13:53:31Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-01T12:42:55Z</dcterms:modified>
-  <cp:revision>13.372</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-01T14:02:45Z</dcterms:modified>
+  <cp:revision>13.376</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -268,7 +268,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.372&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.376&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">all</P>
@@ -19015,7 +19015,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_10364.xml
     <PortCounts out="1"/>
     <P Name="Position">[645, 591, 695, 629]</P>
     <P Name="ZOrder">318</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -21395,7 +21395,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_10366.xml
     <PortCounts out="1"/>
     <P Name="Position">[650, 724, 725, 776]</P>
     <P Name="ZOrder">376</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -23836,7 +23836,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_10369.xml
     <PortCounts out="1"/>
     <P Name="Position">[890, 559, 965, 611]</P>
     <P Name="ZOrder">164</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -40309,7 +40309,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="3" out="1"/>
     <P Name="Position">[905, 180, 1010, 260]</P>
     <P Name="ZOrder">101</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.375</P>
     <P Name="SourceBlock">$bdroot/Build Orientation Matrix</P>
     <P Name="SourceType">rFpro Simulink Toolbox</P>
     <InstanceData>
@@ -40372,7 +40372,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <P Name="Position">[-940, -428, -905, -392]</P>
     <P Name="ZOrder">26268</P>
     <P Name="InputPortMap">u0</P>
-    <P Name="DelayLength">1</P>
+    <P Name="DelayLength">20</P>
     <P Name="InputProcessing">Columns as channels (frame based)</P>
   </Block>
   <Block BlockType="SubSystem" Name="Drag Model" SID="11304">
@@ -40483,7 +40483,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11094.xml
     <PortCounts in="1" out="1"/>
     <P Name="Position">[1805, 555, 1890, 595]</P>
     <P Name="ZOrder">186</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.375</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Min Width Pulse</P>
     <P Name="SourceType">rFpro Remote Physics Toolbox Utility</P>
     <InstanceData>
@@ -43736,20 +43736,21 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11438.xml
     <P Name="Position">[-440, 83, -405, 117]</P>
     <P Name="ZOrder">9</P>
     <P Name="InputPortMap">u0</P>
-    <P Name="DelayLength">1</P>
+    <P Name="DelayLength">20</P>
   </Block>
   <Block BlockType="Delay" Name="Delay2" SID="11451">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[-440, 128, -405, 162]</P>
     <P Name="ZOrder">11</P>
     <P Name="InputPortMap">u0</P>
+    <P Name="DelayLength">21</P>
   </Block>
   <Block BlockType="Delay" Name="Delay3" SID="11453">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[-390, 48, -355, 82]</P>
     <P Name="ZOrder">13</P>
     <P Name="InputPortMap">u0</P>
-    <P Name="DelayLength">1</P>
+    <P Name="DelayLength">20</P>
   </Block>
   <Block BlockType="Gain" Name="Gain" SID="11452">
     <P Name="Position">[-250, 105, -220, 135]</P>
@@ -44927,7 +44928,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1254.xml
     <PortCounts out="1"/>
     <P Name="Position">[480, 251, 535, 289]</P>
     <P Name="ZOrder">118</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -45175,7 +45176,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1282.xml
     <PortCounts out="1"/>
     <P Name="Position">[540, 189, 615, 241]</P>
     <P Name="ZOrder">72</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -46474,7 +46475,7 @@ Decrease</P>
     <PortCounts out="1"/>
     <P Name="Position">[990, 899, 1065, 951]</P>
     <P Name="ZOrder">177</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -49875,7 +49876,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_5780.xml
     <PortCounts out="1"/>
     <P Name="Position">[1360, 874, 1435, 926]</P>
     <P Name="ZOrder">124</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -60504,7 +60505,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7616.xml
     <P Name="ZOrder">509</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Tyre Data</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
@@ -60525,7 +60526,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7616.xml
     <P Name="ZOrder">508</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Tyre Request</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
@@ -60950,7 +60951,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7633.xml
     <P Name="Position">[870, 295, 1055, 675]</P>
     <P Name="ZOrder">790</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Chassis Data</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
@@ -60971,7 +60972,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7633.xml
     <P Name="Position">[535, 459, 705, 731]</P>
     <P Name="ZOrder">789</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
-    <P Name="LibraryVersion">13.371</P>
+    <P Name="LibraryVersion">13.374</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Chassis Request</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
