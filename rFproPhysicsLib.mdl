@@ -90,8 +90,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-06-18T13:53:31Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T14:42:53Z</dcterms:modified>
-  <cp:revision>13.371</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T15:14:05Z</dcterms:modified>
+  <cp:revision>13.372</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -239,7 +239,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.371&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.372&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">all</P>
@@ -12295,9 +12295,7 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_495.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">495</P>
-  <P Name="visible">1</P>
   <P Name="toolbarMode">LIBRARY_TOOLBAR</P>
-  <subviewS/>
   <P Name="ssIdHighWaterMark">26</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -12691,8 +12689,11 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_510.xml
     rCurvCurrent = kappaInterp(loopedIdx);
 
     %% Using dynamic look-ahead
-    loopedIdx = Utilities.fnLoopArrayIndex(kappaInterp, closestWaypointIdx, iLookAhead);
-    rLookAhead = kappaInterp(loopedIdx);
+    % loopedIdx = Utilities.fnLoopArrayIndex(kappaInterp, closestWaypointIdx, iLookAhead);
+    % rLookAhead = kappaInterp(loopedIdx);
+
+    %% LA 8m Apart x5
+    rLookAhead = Utilities.fnGetLookAheadValues(kappaInterp, closestWaypointIdx, 80, 5);
 
 end</P>
       </eml>
@@ -18604,7 +18605,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_10364.xml
     <PortCounts out="1"/>
     <P Name="Position">[645, 591, 695, 629]</P>
     <P Name="ZOrder">318</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -20984,7 +20985,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_10366.xml
     <PortCounts out="1"/>
     <P Name="Position">[650, 724, 725, 776]</P>
     <P Name="ZOrder">376</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -23425,7 +23426,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_10369.xml
     <PortCounts out="1"/>
     <P Name="Position">[890, 559, 965, 611]</P>
     <P Name="ZOrder">164</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -44038,7 +44039,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1254.xml
     <PortCounts out="1"/>
     <P Name="Position">[480, 251, 535, 289]</P>
     <P Name="ZOrder">118</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -44286,7 +44287,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1282.xml
     <PortCounts out="1"/>
     <P Name="Position">[540, 189, 615, 241]</P>
     <P Name="ZOrder">72</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -45585,7 +45586,7 @@ Decrease</P>
     <PortCounts out="1"/>
     <P Name="Position">[990, 899, 1065, 951]</P>
     <P Name="ZOrder">177</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -48986,7 +48987,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_5780.xml
     <PortCounts out="1"/>
     <P Name="Position">[1360, 874, 1435, 926]</P>
     <P Name="ZOrder">124</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Internal Utility/Pulse Generator</P>
     <P Name="SourceType"/>
     <InstanceData>
@@ -59615,7 +59616,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7616.xml
     <P Name="ZOrder">509</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Tyre Data</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
@@ -59636,7 +59637,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7616.xml
     <P Name="ZOrder">508</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
     <P Name="HideAutomaticName">off</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Tyre Request</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
@@ -60061,7 +60062,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7633.xml
     <P Name="Position">[870, 295, 1055, 675]</P>
     <P Name="ZOrder">790</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Chassis Data</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
@@ -60082,7 +60083,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_7633.xml
     <P Name="Position">[535, 459, 705, 731]</P>
     <P Name="ZOrder">789</P>
     <P Name="BackgroundColor">[0.666667, 1.000000, 0.000000]</P>
-    <P Name="LibraryVersion">13.370</P>
+    <P Name="LibraryVersion">13.371</P>
     <P Name="SourceBlock">$bdroot/Terrain Server Blocks/Query Chassis Request</P>
     <P Name="SourceType">rFpro Terrain Server</P>
     <InstanceData>
