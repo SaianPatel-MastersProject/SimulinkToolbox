@@ -49,8 +49,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T16:11:52Z</dcterms:modified>
-  <cp:revision>13.418</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T16:35:20Z</dcterms:modified>
+  <cp:revision>13.419</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -159,7 +159,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.418&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.419&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1892,10 +1892,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="1354">
-    <PortCounts in="10" out="1"/>
+    <PortCounts in="8" out="1"/>
     <P Name="Position">[-530, -245, -520, 110]</P>
     <P Name="ZOrder">5</P>
-    <P Name="Inputs">10</P>
+    <P Name="Inputs">8</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
   </Block>
@@ -1993,15 +1993,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration115.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration116.mat</P>
       <P Name="MiniBatchSize">128</P>
-      <P Name="InputDataFormats">{ &apos;keras_tensor_5&apos;, &apos;BC&apos; }</P>
+      <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration115.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739742.716319444472901523113250732421875</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration116.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739742.732627314864657819271087646484375</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -2014,7 +2014,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="Position">[-455, -97, -425, -73]</P>
     <P Name="ZOrder">6</P>
     <P Name="OutputDimensionality">Customize</P>
-    <P Name="OutputDimensions">[1,10]</P>
+    <P Name="OutputDimensions">[1,8]</P>
   </Block>
   <Block BlockType="Outport" Name="Steering_NN" SID="1349">
     <P Name="Position">[455, -27, 485, -13]</P>
@@ -2059,7 +2059,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">419</P>
     <P Name="Src">1351#out:1</P>
-    <P Name="Points">[35, 0; 0, 15]</P>
+    <P Name="Points">[47, 0; 0, 25]</P>
     <P Name="Dst">1354#in:2</P>
   </Line>
   <Line>
@@ -2081,7 +2081,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">430</P>
     <P Name="Src">1353#out:1</P>
-    <P Name="Points">[17, 0; 0, 20]</P>
+    <P Name="Points">[23, 0; 0, 40]</P>
     <P Name="Dst">1354#in:3</P>
   </Line>
   <Line>
@@ -2098,44 +2098,32 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">478</P>
     <P Name="Src">1475#out:1</P>
-    <P Name="Points">[195, 0; 0, -10]</P>
+    <P Name="Points">[380, 0; 0, 20]</P>
     <P Name="Dst">1354#in:4</P>
   </Line>
   <Line>
     <P Name="ZOrder">480</P>
     <P Name="Src">1475#out:2</P>
-    <P Name="Points">[300, 0; 0, 15]</P>
+    <P Name="Points">[371, 0; 0, 55]</P>
     <P Name="Dst">1354#in:5</P>
   </Line>
   <Line>
     <P Name="ZOrder">481</P>
     <P Name="Src">1475#out:3</P>
-    <P Name="Points">[230, 0; 0, 40]</P>
+    <P Name="Points">[361, 0; 0, 90]</P>
     <P Name="Dst">1354#in:6</P>
   </Line>
   <Line>
     <P Name="ZOrder">482</P>
     <P Name="Src">1475#out:4</P>
-    <P Name="Points">[160, 0; 0, 65]</P>
+    <P Name="Points">[351, 0; 0, 125]</P>
     <P Name="Dst">1354#in:7</P>
   </Line>
   <Line>
     <P Name="ZOrder">483</P>
     <P Name="Src">1475#out:5</P>
-    <P Name="Points">[90, 0; 0, 90]</P>
+    <P Name="Points">[341, 0; 0, 160]</P>
     <P Name="Dst">1354#in:8</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">491</P>
-    <P Name="Src">1459#out:1</P>
-    <P Name="Points">[40, 0; 0, -10]</P>
-    <P Name="Dst">1354#in:9</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">492</P>
-    <P Name="Src">1455#out:1</P>
-    <P Name="Points">[40, 0; 0, -5]</P>
-    <P Name="Dst">1354#in:10</P>
   </Line>
 </System>
 
