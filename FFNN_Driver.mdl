@@ -48,8 +48,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T14:14:24Z</dcterms:modified>
-  <cp:revision>13.414</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T14:41:54Z</dcterms:modified>
+  <cp:revision>13.415</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -149,7 +149,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.414&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.415&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1718,7 +1718,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="BlockMirror">on</P>
     <P Name="NameLocation">top</P>
     <P Name="InputPortMap">u0</P>
-    <P Name="DelayLength">40</P>
+    <P Name="DelayLength">20</P>
   </Block>
   <Block BlockType="Gain" Name="Gain" SID="1461">
     <P Name="Position">[-370, 150, -340, 180]</P>
@@ -1760,15 +1760,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration111.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration112.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration111.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739742.63482638890855014324188232421875</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration112.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739742.65388888888992369174957275390625</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
