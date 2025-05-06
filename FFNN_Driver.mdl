@@ -49,8 +49,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-05T16:35:20Z</dcterms:modified>
-  <cp:revision>13.419</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-06T20:26:02Z</dcterms:modified>
+  <cp:revision>13.423</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -159,7 +159,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.419&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.423&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1438,8 +1438,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_19.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">19</P>
-  <P Name="visible">1</P>
-  <subviewS/>
   <P Name="ssIdHighWaterMark">9</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -1622,8 +1620,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_30.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">30</P>
-  <P Name="visible">1</P>
-  <subviewS/>
   <P Name="ssIdHighWaterMark">7</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -1830,7 +1826,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1041]</P>
-  <P Name="SystemRect">[-1257.500000, -615.000000, 690.922930, 380.000000]</P>
+  <P Name="SystemRect">[-1272.500000, -615.000000, 690.922930, 380.000000]</P>
   <P Name="Open">on</P>
   <Block BlockType="Inport" Name="CTE" SID="1348">
     <P Name="Position">[-650, -242, -620, -228]</P>
@@ -1862,7 +1858,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="rLookAhead" SID="1370">
-    <P Name="Position">[-1125, -102, -1095, -88]</P>
+    <P Name="Position">[-1140, -77, -1110, -63]</P>
     <P Name="ZOrder">399</P>
     <P Name="Port">4</P>
     <PortProperties>
@@ -1872,7 +1868,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="lookAheadHE" SID="1455">
-    <P Name="Position">[-650, 88, -620, 102]</P>
+    <P Name="Position">[-865, 93, -835, 107]</P>
     <P Name="ZOrder">409</P>
     <P Name="Port">5</P>
     <PortProperties>
@@ -1882,7 +1878,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="projectedCTE" SID="1459">
-    <P Name="Position">[-650, 58, -620, 72]</P>
+    <P Name="Position">[-865, 63, -835, 77]</P>
     <P Name="ZOrder">411</P>
     <P Name="Port">6</P>
     <PortProperties>
@@ -1892,10 +1888,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     </PortProperties>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="1354">
-    <PortCounts in="8" out="1"/>
-    <P Name="Position">[-530, -245, -520, 110]</P>
+    <PortCounts in="12" out="1"/>
+    <P Name="Position">[-530, -243, -520, 113]</P>
     <P Name="ZOrder">5</P>
-    <P Name="Inputs">8</P>
+    <P Name="Inputs">12</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
   </Block>
@@ -1933,7 +1929,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   </Block>
   <Block BlockType="SubSystem" Name="MATLAB Function" SID="1475">
     <PortCounts in="1" out="5"/>
-    <P Name="Position">[-1010, -114, -940, -66]</P>
+    <P Name="Position">[-935, -137, -875, -3]</P>
     <P Name="ZOrder">413</P>
     <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_1475"/>
     <P Name="ErrorFcn">Stateflow.Translate.translate</P>
@@ -1993,15 +1989,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration116.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration118.mat</P>
       <P Name="MiniBatchSize">128</P>
       <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration116.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739742.732627314864657819271087646484375</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration118.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739743.889108796254731714725494384765625</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -2014,7 +2010,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="Position">[-455, -97, -425, -73]</P>
     <P Name="ZOrder">6</P>
     <P Name="OutputDimensionality">Customize</P>
-    <P Name="OutputDimensions">[1,8]</P>
+    <P Name="OutputDimensions">[1,12]</P>
   </Block>
   <Block BlockType="Outport" Name="Steering_NN" SID="1349">
     <P Name="Position">[455, -27, 485, -13]</P>
@@ -2053,13 +2049,13 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">418</P>
     <P Name="Src">1348#out:1</P>
-    <P Name="Points">[52, 0; 0, 10]</P>
+    <P Name="Points">[52, 0; 0, 5]</P>
     <P Name="Dst">1354#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">419</P>
     <P Name="Src">1351#out:1</P>
-    <P Name="Points">[47, 0; 0, 25]</P>
+    <P Name="Points">[35, 0; 0, 5]</P>
     <P Name="Dst">1354#in:2</P>
   </Line>
   <Line>
@@ -2075,13 +2071,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">429</P>
     <P Name="Src">1370#out:1</P>
-    <P Name="Points">[32, 0; 0, 5]</P>
     <P Name="Dst">1475#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">430</P>
     <P Name="Src">1353#out:1</P>
-    <P Name="Points">[23, 0; 0, 40]</P>
+    <P Name="Points">[17, 0; 0, 5]</P>
     <P Name="Dst">1354#in:3</P>
   </Line>
   <Line>
@@ -2092,38 +2087,61 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
   <Line>
     <P Name="ZOrder">451</P>
     <P Name="Src">1457#out:1</P>
-    <P Name="Points">[-258, 0; 0, 103; -312, 0]</P>
-    <P Name="Dst">1461#in:1</P>
+    <P Name="Points">[-258, 0; 0, 103; -312, 0; 0, -8]</P>
+    <Branch>
+      <P Name="ZOrder">501</P>
+      <P Name="Points">[0, -33; -242, 0; 0, -122]</P>
+      <P Name="Dst">1354#in:9</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">500</P>
+      <P Name="Dst">1461#in:1</P>
+    </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">478</P>
+    <P Name="ZOrder">487</P>
+    <P Name="Src">1455#out:1</P>
+    <P Name="Dst">1354#in:12</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">488</P>
+    <P Name="Src">1459#out:1</P>
+    <P Name="Dst">1354#in:11</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">494</P>
     <P Name="Src">1475#out:1</P>
-    <P Name="Points">[380, 0; 0, 20]</P>
+    <P Name="Points">[167, 0; 0, -20]</P>
     <P Name="Dst">1354#in:4</P>
   </Line>
   <Line>
-    <P Name="ZOrder">480</P>
+    <P Name="ZOrder">495</P>
     <P Name="Src">1475#out:2</P>
-    <P Name="Points">[371, 0; 0, 55]</P>
+    <P Name="Points">[253, 0; 0, -15]</P>
     <P Name="Dst">1354#in:5</P>
   </Line>
   <Line>
-    <P Name="ZOrder">481</P>
+    <P Name="ZOrder">496</P>
     <P Name="Src">1475#out:3</P>
-    <P Name="Points">[361, 0; 0, 90]</P>
+    <P Name="Points">[167, 0; 0, -10]</P>
     <P Name="Dst">1354#in:6</P>
   </Line>
   <Line>
-    <P Name="ZOrder">482</P>
+    <P Name="ZOrder">497</P>
     <P Name="Src">1475#out:4</P>
-    <P Name="Points">[351, 0; 0, 125]</P>
+    <P Name="Points">[167, 0; 0, -5]</P>
     <P Name="Dst">1354#in:7</P>
   </Line>
   <Line>
-    <P Name="ZOrder">483</P>
+    <P Name="ZOrder">498</P>
     <P Name="Src">1475#out:5</P>
-    <P Name="Points">[341, 0; 0, 160]</P>
     <P Name="Dst">1354#in:8</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">499</P>
+    <P Name="Src">1461#out:1</P>
+    <P Name="Points">[-179, 0; 0, -125]</P>
+    <P Name="Dst">1354#in:10</P>
   </Line>
 </System>
 
@@ -4778,8 +4796,8 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="LoadSaveID" Class="char">1347</P>
           <P Name="Extents" Class="double">[1882.0, 601.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[-1113.6446846133954, -345.19056425597239]</P>
-          <P Name="SceneRectInView" Class="double">[-1113.6446846133954, -345.19056425597239, 1882.0, 601.0]</P>
+          <P Name="Offset" Class="double">[-1166.6446846133954, -407.0]</P>
+          <P Name="SceneRectInView" Class="double">[-1166.6446846133954, -407.0, 1882.0, 601.0]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
