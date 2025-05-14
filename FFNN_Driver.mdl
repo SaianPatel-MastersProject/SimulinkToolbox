@@ -49,8 +49,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-08-19T10:33:39Z</dcterms:created>
   <dc:creator>enewton</dc:creator>
   <cp:lastModifiedBy>Saian</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-14T08:35:54Z</dcterms:modified>
-  <cp:revision>13.436</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-05-14T09:21:10Z</dcterms:modified>
+  <cp:revision>13.438</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -159,7 +159,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.436&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:13.438&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">user</P>
@@ -1847,7 +1847,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
     <P Name="ZOrder">412</P>
     <P Name="BlockMirror">on</P>
     <P Name="NameLocation">top</P>
-    <P Name="Gain">-1.425</P>
+    <P Name="Gain">-1.575</P>
   </Block>
   <Block BlockType="SubSystem" Name="MATLAB Function" SID="1475">
     <PortCounts in="1" out="1"/>
@@ -1901,15 +1901,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1347.xml
       <P Name="ContentPreviewEnabled">on</P>
       <P Name="Network">Network from MAT-file</P>
       <P Name="NetworkFunction">squeezenet</P>
-      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration132.mat</P>
+      <P Name="NetworkFilePath">D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration133.mat</P>
       <P Name="MiniBatchSize">128</P>
-      <P Name="InputDataFormats">{ &apos;keras_tensor&apos;, &apos;BC&apos; }</P>
+      <P Name="InputDataFormats">{ &apos;keras_tensor_5&apos;, &apos;BC&apos; }</P>
       <P Name="Predictions">on</P>
       <P Name="Activations">{}</P>
       <P Name="ForceInterpretedSim">off</P>
       <P Name="EnableDLNetwork">on</P>
-      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration132.mat&apos;</P>
-      <P Name="LastKnownNetworkTimeStamp">739751.396689814864657819271087646484375</P>
+      <P Name="LastKnownNetworkFilePath">&apos;D:\Users\Saian\Workspace\SimulinkToolbox\SteeringModels\SteeringModel_Iteration133.mat&apos;</P>
+      <P Name="LastKnownNetworkTimeStamp">739751.43127314816229045391082763671875</P>
     </InstanceData>
     <PortProperties>
       <Port Type="out" Index="1">
@@ -3216,7 +3216,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="LibraryVersion">13.373</P>
     <LinkData>
       <DialogParameters BlockName="Subsystem/Gain2">
-        <P Name="Gain">-1.425</P>
+        <P Name="Gain">-1.575</P>
       </DialogParameters>
     </LinkData>
     <P Name="FontSize">12</P>
