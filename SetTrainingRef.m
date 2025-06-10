@@ -1,7 +1,8 @@
+
 %% Script to automate standardization (or normalization)
 
 % Read in the reference training data (not transformed)
-refTrainingData = readtable("D:\Users\Saian\Workspace\NeuralNetworks\FFNN\Iteration130\TrainingData.csv", "VariableNamingRule", "preserve");
+refTrainingData = readtable("D:\Users\Saian\Workspace\NeuralNetworks\FFNN\Iteration138\TrainingData.csv", "VariableNamingRule", "preserve");
 
 % Get the preProcessArray
 preProcessArray = fnMakePreProcessArray(table2array(refTrainingData), 'S');
